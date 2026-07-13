@@ -1,0 +1,311 @@
+<!-- ============================================================
+     STORY SECTION — markup + its own CSS
+     ============================================================ -->
+<style>
+  .story {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0px;
+    background: linear-gradient(220.57deg, #b7d8f2 10.88%, #b7d8f2 89.12%);
+    border-radius: 24px;
+  }
+  .story-inner {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 80px;
+  }
+  .story-heading {
+    font-family: "GT Walsheim Trial", "Poppins", sans-serif;
+    font-weight: 900; /* -> GTWalsheimTrial-UBd */
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #16283a;
+    margin-bottom: 60px;
+    max-width: 943px;
+  }
+  .story-heading span {
+    display: block;
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% / 50% */
+    gap: 72px;
+    align-items: center;
+  }
+
+  /* ---- Left: original photo (pill) + text hugging its outline ---- */
+  .story-media {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 600 / 760;
+    justify-self: center;
+  }
+  /* the text ring hugs the pill outline; the letters flow around it */
+  .story-ring {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .story-ring svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+  }
+  .story-ring-text {
+    fill: #16283a;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  /* the original image, shown in full, rounded into a pill via border-radius */
+  .story-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    aspect-ratio: 568 / 783; /* Figma frame ratio -> vertical pill */
+    border-radius: 788px; /* >= half width => stadium / pill shape */
+    overflow: hidden;
+    background: #cfe0f0;
+    box-shadow: 0 24px 55px rgba(22, 40, 58, 0.22);
+  }
+  .story-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  /* ---- Right: content ---- */
+  .story-content {
+    max-width: 100%;
+  }
+  .story-p {
+    color: #000000;
+    margin-bottom: 30px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31.2px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+
+  .story-stores {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-top: 74px;
+  }
+  .story-stores-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .story-stores-text p {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 244px;
+    color: #000000;
+    padding-bottom: 26px;
+  }
+  .story-stores-link {
+    display: inline-flex;
+    align-items: center;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    gap: 2px;
+  }
+  .story-stores-link svg {
+    width: 18px;
+    height: 18px;
+  }
+  .story-stores-link:hover {
+    color: #ee93b4;
+    gap: 14px;
+  }
+
+  /* ---- Scroll-in reveal ---- */
+  .story.reveal .story-heading,
+  .story.reveal .story-media,
+  .story.reveal .story-p,
+  .story.reveal .story-stores {
+    opacity: 0;
+    transform: translateY(34px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .story.reveal .story-media {
+    transform: translateY(34px) scale(0.9);
+  }
+  .story.reveal.is-in .story-heading,
+  .story.reveal.is-in .story-media,
+  .story.reveal.is-in .story-p,
+  .story.reveal.is-in .story-stores {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .story.reveal.is-in .story-media {
+    transform: translateY(0) scale(1);
+    transition-delay: 0.15s;
+  }
+  .story.reveal.is-in .story-heading {
+    transition-delay: 0.05s;
+  }
+  .story.reveal.is-in .story-p:nth-of-type(1) {
+    transition-delay: 0.28s;
+  }
+  .story.reveal.is-in .story-p:nth-of-type(2) {
+    transition-delay: 0.38s;
+  }
+  .story.reveal.is-in .story-p:nth-of-type(3) {
+    transition-delay: 0.48s;
+  }
+  .story.reveal.is-in .story-stores {
+    transition-delay: 0.6s;
+  }
+
+  /* ---- Tablet / mobile: stacked ---- */
+  @media (max-width: 1023px) {
+    .story {
+      padding: 60px 0px; /* side padding lives on .story-inner */
+    }
+    .story-inner {
+      padding: 0 40px;
+    }
+    .story-heading {
+      font-size: 32px;
+      margin-bottom: 36px;
+    }
+    .story-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .story-media,
+    .story-content {
+      max-width: 100%;
+    }
+    .story-p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .story-heading {
+      font-size: 36px;
+      line-height: normal;
+      margin-bottom: 35px;
+    }
+    .story-photo {
+      width: 90%;
+    }
+    /* photo is 90% here, so scale the text ring out to stay OUTSIDE it
+       (0.90 photo vs 0.797 path -> needs ~1.2x to clear it, same gap as desktop) */
+    .story-ring {
+      transform: scale(1.2);
+    }
+    .story-grid {
+      gap: 40px;
+    }
+    .story-p {
+      font-size: 20px;
+      line-height: normal;
+      margin-bottom: 15px;
+    }
+    .story-stores {
+      margin-top: 55px;
+    }
+  }
+
+  /* mobile side padding = 16px */
+  @media (max-width: 767px) {
+    .story-inner {
+      padding: 0 16px;
+    }
+  }
+</style>
+
+<section class="story reveal" id="story" aria-labelledby="storyHeading">
+    <div class="story-inner">
+        <h2 class="story-heading" id="storyHeading">
+            Rooted in Tradition, Baked Fresh Daily
+        </h2>
+
+        <div class="story-grid">
+            <!-- LEFT: original photo (pill) with text hugging its outline -->
+            <div class="story-media">
+                <div class="story-ring" aria-hidden="true">
+                    <svg viewBox="0 0 600 760">
+                        <defs>
+                            <!-- stadium / pill outline that hugs the photo edge -->
+                            <path id="storyRingPath"
+                                d="M61,295 A239,239 0 0 1 539,295 L539,465 A239,239 0 0 1 61,465 Z" />
+                        </defs>
+                        <text class="story-ring-text">
+                            <textPath id="storyTextPath" href="#storyRingPath" startOffset="0">Deli &amp;
+                                Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160;
+                                Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160;
+                                Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery
+                                &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays
+                                &#160;&#8226;&#160; Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp;
+                                Pastries Bakery &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering
+                                &amp; Party Trays &#160;&#8226;&#160; Deli &amp; Sandwiches &#160;&#8226;&#160;
+                                Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160; Wholesale Bakery
+                                &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160; Deli &amp;
+                                Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160;
+                                Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160;
+                                Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery
+                                &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays
+                                &#160;&#8226;&#160; </textPath>
+                        </text>
+                    </svg>
+                </div>
+                <div class="story-photo">
+                    <img src="assets/images/3b2fa1f1c65eae960ebf0b6c0a724a6ddb013124.png"
+                        alt="Hillcrest baker holding a fresh strawberry cake" />
+                </div>
+            </div>
+
+            <!-- RIGHT: content -->
+            <div class="story-content">
+                <p class="story-p">And in general — the business of people with absolutely
+                    &ldquo;unfrozen&rdquo; experience. To Mr.&nbsp;Pops.</p>
+                <p class="story-p">Now we feel like experimenters, actually, as in the beginning.</p>
+                <p class="story-p">We are like in a laboratory, where the result is tasted. If it suits us, it
+                    means it will definitely suit one of you!</p>
+
+                <div class="story-stores">
+                    <span class="story-stores-icon">
+                        <img src="assets/images/Frame%202147243354.png" alt="" />
+                    </span>
+                    <div class="story-stores-text">
+                        <p>&ldquo;Baked with original Parisian recipes, our pastries deliver bold flavors that
+                            surprise and delight.&rdquo;</p>
+                        <a href="#" class="story-stores-link">
+                            Find Our Stores
+                            <svg aria-hidden="true">
+                                <use href="#ic-arrow" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

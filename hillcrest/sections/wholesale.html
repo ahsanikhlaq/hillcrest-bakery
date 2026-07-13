@@ -1,0 +1,515 @@
+<!-- ============================================================
+     WHOLESALE SECTION — markup + its own CSS
+     ============================================================ -->
+<style>
+  .wholesale {
+    background: #f7f3ea;
+    padding: 80px 0px 60px;
+  }
+  .wholesale-inner {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+  .wholesale-media {
+    position: relative;
+    z-index: 2;
+    border-radius: 100px;
+    overflow: hidden;
+    height: 105%;
+   
+  }
+  .wholesale-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .wholesale-content {
+       position: relative;
+    z-index: 1;
+    background: #cfe2f5;
+    border-radius: 0px 32px 32px 0px;
+    padding: 89px 45px 89px 105px;
+    margin-left: -60px;
+  }
+
+  /* absolutely-positioned badges above the heading */
+  .wholesale-badge {
+    position: absolute;
+    z-index: 3;
+    display: flex !important;
+    align-items: center;
+    gap: 4px;
+    font-family: GT Walsheim Trial;
+font-style: Regular;
+font-size: 9.31px;
+leading-trim: NONE;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color: #000;
+padding: 7px 11px;
+border-radius: 24px;
+  }
+  .wholesale-badge--pink {
+        border: 0.47px solid #FFFFFF;
+    background: #FF6C7F;
+    top: 10px;
+    right: 210px;
+    transform: rotate(10deg);
+  }
+  .wholesale-badge--dark {
+    border: 0.47px solid #FFFFFF;
+    background: #FFFFFF;
+
+   top: 54%;
+    right: 59%;
+    transform: rotate(-5deg);
+  }
+
+  .wholesale-heading {
+    position: relative;
+    font-family: "GT Walsheim Trial", "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 1.02;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #16283a;
+    margin-bottom: 30px;
+  }
+  .wholesale-heading span {
+    display: block;
+  }
+  .wholesale-text {
+    font-family: Lato;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+leading-trim: CAP_HEIGHT;
+line-height: 24px;
+letter-spacing: 0%;
+color: #000;
+    max-width: 535px;
+    margin-bottom: 30px;
+  }
+
+  .wholesale-features {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 40px;
+    margin-bottom: 30px;
+           max-width: max-content;
+    width: 100%;
+    width: 100%;
+  }
+  .wholesale-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+   font-family: Lato;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+leading-trim: CAP_HEIGHT;
+line-height: 24px;
+letter-spacing: 0%;
+
+    color: #000;
+  }
+  .wholesale-features svg {
+    width: 22px;
+    height: 22px;
+    color: #16283a;
+    flex-shrink: 0;
+  }
+
+  /* button — the icon colour spreads out to fill the button on hover */
+  .wholesale-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px; /* requested 5px padding */
+    border-radius: 50px;
+    background: #ffffff;
+    border: 1px solid rgba(22, 40, 58, 0.14);
+  }
+  .wholesale-btn-label {
+    position: relative;
+    z-index: 2;
+    padding: 0 16px 0 20px;
+    transition: color 0.35s ease;
+    font-family: Lato;
+    font-weight: 900;
+    font-style: Black;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 21.2px;
+    letter-spacing: 2%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+  }
+  .wholesale-btn-icon {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #6fcbf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wholesale-btn-icon svg {
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+  }
+  /* fill layer is inset by the 5px padding, so the padding frame always stays */
+  .wholesale-btn-fill {
+    position: absolute;
+    inset: 5px;
+    z-index: 1;
+    border-radius: 50px;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  /* the spreading circle starts exactly over the icon and scales out */
+  .wholesale-btn-fill::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #6fcbf0;
+    transform: translateY(-50%) scale(1);
+    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .wholesale-btn:hover .wholesale-btn-fill::before {
+    transform: translateY(-50%) scale(16);
+  }
+  .wholesale-btn:hover .wholesale-btn-label {
+    color: #ffffff;
+  }
+  .wholesale-btn:hover {
+    border-color: #6fcbf0;
+    box-shadow: 0 12px 26px rgba(111, 203, 240, 0.35);
+  }
+
+  /* ---- Scroll-in reveal ---- */
+  .wholesale.reveal .wholesale-media,
+  .wholesale.reveal .wholesale-content {
+    opacity: 0;
+    transform: translateY(34px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .wholesale.reveal.is-in .wholesale-media,
+  .wholesale.reveal.is-in .wholesale-content {
+    opacity: 1;
+    transform: none;
+  }
+  .wholesale.reveal.is-in .wholesale-content {
+    transition-delay: 0.12s;
+  }
+  span.\'new-cricel {
+    border: 1px solid #000000;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 12px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+span.dot-svg {
+    background: #000000;
+    width: 3px;
+    height: 3px;
+    border-radius: 9px;
+}
+
+ .new-2nd .wholesale-media{
+    order: 2;
+ }
+  .new-2nd .wholesale-content {
+    position: relative;
+    z-index: 1;
+    background: #cfe2f5;
+    border-radius: 32px 0px 0px 32px;
+    padding: 89px 105px 89px 60px;
+    margin-right: -60px;
+    order: 1;
+        margin-left: 0;
+}
+.new-2nd .wholesale-text {
+    max-width: 508px;
+}
+.new-2nd .wholesale-text strong{
+    font-weight: 900;
+}
+.new-2nd .wholesale-badge--pink {
+    border: 0.47px solid #FFFFFF;
+    background: #FF6C7F;
+    top: 10px;
+    right: 70px;
+    transform: rotate(5deg);
+}
+
+  @media (max-width: 1023px) {
+    .wholesale {
+      padding: 60px 0px 76px;
+    }
+    .wholesale-inner {
+      grid-template-columns: 1fr;
+      max-width: 520px;
+      padding: 0px 40x;
+    }
+    .wholesale-media {
+      aspect-ratio: 1 / 1;
+      border-radius: 24px;
+    }
+    .wholesale-content {
+      margin-left: 0;
+      margin-top: 18px;
+      padding: 46px 24px 40px;
+      border-radius: 26px;
+    }
+    .wholesale-heading {
+      font-size: 32px;
+    }
+    .wholesale-text {
+      font-size: 15px;
+    }
+    .wholesale-features {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .wholesale-btn {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .wholesale-badge--pink {
+      top: 30px;
+      left: auto;
+      right: 128px;
+    }
+    .wholesale-badge--dark {
+      top: 72px;
+      left: auto;
+      right: 34px;
+    }
+  }
+
+  /* mobile side padding = 16px */
+  @media (max-width: 767px) {
+    .new-2nd .wholesale-media{
+    order: unset;
+ }
+  .new-2nd .wholesale-content {
+    position: relative;
+    z-index: unset;
+    background: #cfe2f5;
+    border-radius: unset;
+    padding: unset;
+    margin-right: unset;
+    order:unset;
+        margin-left: unset;
+         margin-left: 0;
+        margin-top: -18px;
+        padding: 40px 14px 32px;
+        border-radius: 0px 0px 0px 0px;
+}
+.new-2nd .wholesale-text {
+    max-width: unset;
+}
+    .wholesale {
+      padding: 25px 00px 25px;
+    }
+  .wholesale-inner {
+        max-width: 100%;
+        padding: 0px 16px;
+    }
+
+  
+    .wholesale-heading {
+      font-size: 36px;
+        margin-bottom: 24px;
+    }
+    .wholesale-badge--pink {
+      right: 96px;
+      top: 0;
+    }
+        .wholesale-media {
+        aspect-ratio: unset;
+        border-radius: 20px;
+    }
+        .wholesale-content {
+        margin-left: 0;
+        margin-top: -18px;
+        padding: 40px 14px 32px;
+        border-radius: 0px 0px 20px 20px;
+    }
+        .wholesale-badge--dark {
+        right: 0px;
+        top: 80%;
+    }
+        .wholesale-text {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .wholesale-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .wholesale-btn-label {
+    position: relative;
+    z-index: 2;
+    padding: 0 3px 0 10px;
+        font-size: 15px;
+    }
+    
+.new-2nd .wholesale-text strong{
+    font-weight: 900;
+}
+.new-2nd .wholesale-badge--pink {
+    border: 0.47px solid #FFFFFF;
+    background: #FF6C7F;
+    top: 20px;
+    right: 0px;
+    transform: rotate(5deg);
+}
+}
+</style>
+
+<section class="wholesale" aria-labelledby="wholesaleHeading">
+    <div class="wholesale-inner">
+        <div class="wholesale-media">
+            <!-- Swap src for your real photo (jpg/png). -->
+            <img src="assets/images/nicole-couch-soup.jpg.png"
+                alt="A table spread of fresh cakes, pastries and baked goods" />
+        </div>
+
+        <div class="wholesale-content">
+           
+
+            <h2 class="wholesale-heading" id="wholesaleHeading">
+                <span>Wholesale</span>
+                <span>Bakery Supply</span>
+                 <span class="wholesale-badge wholesale-badge--pink">
+                    <span class="dot-svg"></span>
+                    Cookie
+                </span>
+            <span class="wholesale-badge wholesale-badge--dark">
+                <span class="dot-svg"></span>
+                Cookie
+            </span>
+            </h2>
+
+            <p class="wholesale-text">Fresh breads, pastries, desserts, and baked goods supplied daily to
+                cafés, restaurants, grocery stores, schools, and local businesses. Reliable production,
+                consistent quality, and bakery products made fresh every day.</p>
+
+            <ul class="wholesale-features">
+                <li>
+                    <span class="'new-cricel">
+                        ✔
+                    </span>
+                    Fresh Daily Production
+                </li>
+                <li>
+                    <span class="'new-cricel">
+                        ✔
+                    </span>
+                    
+                    Bulk Orders Available
+                </li>
+                <li>
+                   <span class="'new-cricel">
+                        ✔
+                    </span>
+                    Reliable Local Delivery
+                </li>
+                <li>
+                    <span class="'new-cricel">
+                        ✔
+                    </span>
+                    Custom Bakery Solutions
+                </li>
+            </ul>
+
+            <a href="#" class="wholesale-btn">
+                <span class="wholesale-btn-fill" aria-hidden="true"></span>
+                <span class="wholesale-btn-label">Become a Wholesale Partner</span>
+                <span class="wholesale-btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+<path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="wholesale new-2nd" aria-labelledby="wholesaleHeading">
+    <div class="wholesale-inner">
+        <div class="wholesale-media">
+            <!-- Swap src for your real photo (jpg/png). -->
+            <img src="assets/images/5680c3b6b2da1c5ce7d09b2aa7690ddf32c065ab.png"
+                alt="A table spread of fresh cakes, pastries and baked goods" />
+        </div>
+
+        <div class="wholesale-content">
+           
+
+            <h2 class="wholesale-heading" id="wholesaleHeading">
+                <span>Made For Every </span>
+                <span>Gathering</span>
+                 <span class="wholesale-badge wholesale-badge--pink">
+                    <span class="dot-svg"></span>
+                    Cookie
+                </span>
+            </h2>
+
+            <p class="wholesale-text">
+                           From <strong>birthdays</strong> and <strong>office</strong> lunches to celebrations, <strong>school</strong> events, and <strong> gatherings</strong> our catering trays, desserts, and baked favorites are designed to bring people together.
+
+            </p>
+
+            
+
+            <a href="#" class="wholesale-btn">
+                <span class="wholesale-btn-fill" aria-hidden="true"></span>
+                <span class="wholesale-btn-label">Plan Your Event</span>
+                <span class="wholesale-btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+<path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+

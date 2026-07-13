@@ -1,0 +1,132 @@
+/* ============================================================
+   BASE — reset, fonts, global element styles
+   ============================================================ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* one family, three weights: 500 = Md, 700 = Bd, 900 = UBd */
+@font-face {
+  font-family: "GT Walsheim Trial";
+  src:
+    url("../fonts/GTWalsheimTrial-Md.woff2") format("woff2"),
+    url("../fonts/GTWalsheimTrial-Md.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT Walsheim Trial";
+  src:
+    url("../fonts/GTWalsheimTrial-Bd.woff2") format("woff2"),
+    url("../fonts/GTWalsheimTrial-Bd.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT Walsheim Trial";
+  src:
+    url("../fonts/GTWalsheimTrial-UBd.woff2") format("woff2"),
+    url("../fonts/GTWalsheimTrial-UBd.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/Lato-Heavy.woff2") format("woff2"),
+    url("../fonts/Lato-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/Lato-Medium.woff2") format("woff2"),
+    url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src:
+    url("../fonts/Lato-Semibold.woff2") format("woff2"),
+    url("../fonts/Lato-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #6fcbf0;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ---- Shared: logo wordmark (used by header + mobile sub-header) ---- */
+.logo-wordmark {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+}
+.logo-wordmark small {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.logo-wordmark--sm {
+  font-size: 18px;
+}
+.logo-wordmark--sm small {
+  font-size: 7px;
+}
