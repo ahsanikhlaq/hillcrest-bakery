@@ -458,19 +458,14 @@ button:focus-visible {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  bottom: 0;
   z-index: 200;
   background: rgba(255, 255, 255, 0.92);
   -webkit-backdrop-filter: blur(24px);
   backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  padding: calc(10px + env(safe-area-inset-top)) 12px 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
   justify-content: space-between;
-  transform: translateY(-100%);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mobile-bottom-nav.is-visible {
-  transform: translateY(0);
 }
 .mobile-nav-item {
   display: flex;
@@ -708,6 +703,503 @@ button:focus-visible {
   }
   .fp-pagination {
     margin-top: 24px;
+  }
+}
+
+/* ============================================================
+   SHOP YOUR FAVORITE SNACKS
+   Paste this block into style.css (e.g. right after the
+   Featured Products section's CSS).
+   ============================================================ */
+.shop-fav-section {
+  width: 100%;
+  background: #fffef2;
+  padding: 80px 0;
+}
+.shop-fav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.shop-fav-title {
+  text-align: left;
+  font-family: "GT Walsheim Trial U Bd", "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 40px;
+}
+.shop-fav-title-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 2px;
+}
+.shop-fav-title-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* Desktop: icon sits after "Snacks"; the mobile copy + line
+   break stay switched off so everything flows on one line. */
+.shop-fav-title-icon--mobile {
+  display: none;
+}
+.shop-fav-title-break {
+  display: none;
+}
+
+.shop-fav-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.shop-fav-filter {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 100px;
+  padding: 0px 30px;
+  height: 44px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  transition:
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shop-fav-filter.is-active,
+.shop-fav-filter:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.shop-fav-swiper {
+  overflow: hidden;
+}
+.shop-fav-card {
+  position: relative;
+  width: 324px;
+  height: 387px;
+  border-radius: 12.62px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+.shop-fav-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.shop-fav-card-info {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 8.42px;
+  border-radius: 8.42px;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(21.04px);
+  border: 1px solid rgba(220, 216, 216, 0.2);
+}
+.shop-fav-card-text {
+  min-width: 0;
+}
+.shop-fav-card-title {
+  font-family: "GT Walsheim Trial", "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shop-fav-card-price {
+  font-family: "GT Walsheim Trial", "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 23.14px;
+  line-height: 23.14px;
+  color: #ffffff;
+  margin: 0;
+}
+.shop-fav-card-btn {
+  width: 37.87px;
+  height: 37.87px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 46.29px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shop-fav-card-btn:hover {
+  transform: scale(1.08);
+}
+.shop-fav-card-btn svg {
+  width: 13px;
+  height: 18px;
+}
+
+.shop-fav-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+.shop-fav-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1.5px solid #000000;
+  opacity: 1;
+  margin: 0 !important;
+  cursor: pointer;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.shop-fav-pagination .swiper-pagination-bullet-active {
+  width: 57px;
+  background: #000000;
+  border-color: #000000;
+}
+
+@media (max-width: 1023px) {
+  .shop-fav-section {
+    padding: 40px 0;
+  }
+  .shop-fav-container {
+    padding: 0;
+  }
+  .shop-fav-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: -1px;
+    padding: 0 16px;
+    margin-bottom: 24px;
+  }
+  .shop-fav-title-icon {
+    width: 45px;
+    height: 45px;
+    margin-left: 0px;
+    margin-bottom: 4px;
+  }
+  .shop-fav-card-title {
+    margin: 0 0 8px;
+  }
+  /* Mobile: swap which icon copy shows and switch the break on,
+     so it reads "Shop Your [icon]" / "Favorite Snacks" on two
+     lines exactly, regardless of exact character widths. */
+  .shop-fav-title-icon--desktop {
+    display: none;
+  }
+  .shop-fav-title-icon--mobile {
+    display: inline-block;
+  }
+  .shop-fav-title-break {
+    display: block;
+  }
+  .shop-fav-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 16px 0px;
+    margin-bottom: 24px;
+    gap: 8px;
+    scrollbar-width: none;
+  }
+  .shop-fav-filters::-webkit-scrollbar {
+    display: none;
+  }
+  .shop-fav-filter {
+    flex-shrink: 0;
+    padding: 0px 16px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .shop-fav-swiper {
+    padding: 0 16px;
+  }
+  .shop-fav-card {
+    width: 100%;
+    height: 340px;
+    border-radius: 12.62px;
+  }
+  .shop-fav-pagination {
+    margin-top: 24px;
+  }
+  .shop-fav-card-info {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* ============================================================
+   FLAVOR SPOTLIGHT (e.g. "Cheesecake")
+   Paste this block into style.css.
+   ============================================================ */
+.event-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 0px 80px;
+}
+.event-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+}
+
+.event-swiper {
+  border-radius: 32px;
+  overflow: hidden;
+}
+.event-slide {
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  align-items: self-start;
+}
+.swiper-slide:not(.swiper-slide-active) .event-content,
+.swiper-slide:not(.swiper-slide-active) .event-nav {
+  pointer-events: none;
+}
+.event-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+.event-bg-img--mobile {
+  display: none;
+}
+
+.event-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 620px;
+  padding: 80px 0 80px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.12px solid rgba(44, 38, 9, 1);
+  border-radius: 1122px;
+  padding: 0px 16px;
+  height: 43px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 15.72px;
+  line-height: 18.42px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.event-title {
+  font-family: "GT Walsheim Trial U Bd", "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 14px;
+}
+
+.event-desc {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 0 28px;
+}
+
+.event-cta {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: auto;
+  height: 58px;
+  border-radius: 50px;
+  background: #ffffff;
+  padding: 4px 4px 4px 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.event-cta::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  right: 4px;
+  left: calc(100% - 54px);
+  border-radius: 999px;
+  background: #6fcbf0;
+  z-index: 1;
+  transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.event-cta:hover::before {
+  left: 4px;
+}
+.event-cta-label {
+  position: relative;
+  z-index: 2;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21.2px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.event-cta:hover .event-cta-label {
+  color: #000000;
+}
+.event-cta-icon {
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #6fcbf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event-cta-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.event-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+.event-nav-btn {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 70px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.event-nav-btn svg {
+  width: 18px;
+  height: 12px;
+  stroke: currentColor;
+}
+.event-nav-btn:disabled,
+.event-nav-btn.is-disabled {
+  background: #ffffff;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1023px) {
+  .event-section {
+    padding: 40px 0px 40px;
+  }
+  .event-container {
+    padding: 0 16px;
+  }
+  .event-swiper {
+    border-radius: 20px;
+  }
+  .event-slide {
+    min-height: 700px;
+    display: flex;
+    align-items: self-start;
+  }
+  .event-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+  .event-bg-img--desktop {
+    display: none;
+  }
+  .event-bg-img--mobile {
+    display: block;
+  }
+  .event-content {
+    position: relative;
+    z-index: 2;
+    max-width: none;
+    padding: 32px 12px 0px;
+  }
+  .event-cta-label {
+    font-size: 14px;
+  }
+  .event-badge {
+    font-size: 14px;
+    line-height: 18.42px;
+    padding: 0px 14px;
+    height: 35px;
+    margin-bottom: 16px;
+  }
+  .event-title {
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+  }
+  .event-desc {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .event-cta {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -990,7 +1482,7 @@ button:focus-visible {
   }
 
   .mobile-bottom-nav {
-    padding: 6px 12px 8px;
+    padding: 6px 12px calc(8px + env(safe-area-inset-bottom));
     display: flex;
     gap: 12px;
     background: rgba(255, 255, 255, 0.12);

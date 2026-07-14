@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
+    <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
@@ -23,7 +23,7 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Global only (reset, fonts, shared bits).
          Every SECTION carries its own CSS inside sections/*.html -->
     <link rel="stylesheet" href="css/base.css">
@@ -31,8 +31,8 @@
 
 <body>
 
-    
-  <!-- ============================================================
+
+    <!-- ============================================================
          HEADER
          ============================================================ -->
     <header class="site-header" id="siteHeader">
@@ -131,7 +131,7 @@
         </section>
     </main>
 
- <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Mobile">
+    <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Mobile">
         <a href="#" class="mobile-nav-item is-active"><span class="mobile-nav-icon"><svg width="22" height="20"
                     viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -200,7 +200,7 @@
                 </svg></span>
             Order</a>
     </nav>
-    
+
 
 
     <section class="fp-section">
@@ -210,7 +210,7 @@
             <div class="swiper fp-swiper">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide fp-slide" style="--fp-bg:#BADAF3;">
+                    <div class="swiper-slide fp-slide fp-slide--blue">
                         <div class="fp-slide-photo">
                             <img src="assets/images/Link (2).png" class="fp-crumbs" alt="" loading="lazy" width="600"
                                 height="700">
@@ -231,13 +231,13 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide fp-slide" style="--fp-bg:#F6DFA6;">
+                    <div class="swiper-slide fp-slide fp-slide--sand">
                         <div class="fp-slide-photo">
                             <img src="assets/images/Link (3).png" class="fp-crumbs" alt="" loading="lazy" width="600"
                                 height="700">
                             <div class="fp-circle-img">
-                                <img src="assets/images/Mask Group (10).png" alt="Chocolate cake" loading="lazy" width="400"
-                                    height="400">
+                                <img src="assets/images/Mask Group (10).png" alt="Chocolate cake" loading="lazy"
+                                    width="400" height="400">
                             </div>
                         </div>
                         <div class="fp-slide-info">
@@ -252,13 +252,13 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide fp-slide" style="--fp-bg:#F5C4D3;">
+                    <div class="swiper-slide fp-slide fp-slide--pink">
                         <div class="fp-slide-photo">
                             <img src="assets/images/Link (4).png" class="fp-crumbs" alt="" loading="lazy" width="600"
                                 height="700">
                             <div class="fp-circle-img">
-                                <img src="assets/images/Mask Group (11).png" alt="Chocolate donut" loading="lazy" width="400"
-                                    height="400">
+                                <img src="assets/images/Mask Group (11).png" alt="Chocolate donut" loading="lazy"
+                                    width="400" height="400">
                             </div>
                         </div>
                         <div class="fp-slide-info">
@@ -280,839 +280,1918 @@
         </div>
     </section>
 
+     <section class="shop-fav-section">
+        <div class="shop-fav-container">
+            <h2 class="shop-fav-title">
+                Shop Your
+                <span class="shop-fav-title-icon shop-fav-title-icon--mobile" aria-hidden="true">
+                    <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M29.25 58.5C45.4043 58.5 58.5 45.4043 58.5 29.25C58.5 13.0957 45.4043 0 29.25 0C13.0957 0 0 13.0957 0 29.25C0 45.4043 13.0957 58.5 29.25 58.5Z"
+                            fill="#FF6C7F" />
+                        <path
+                            d="M29.25 13C26.0361 13 22.8943 13.953 20.222 15.7386C17.5497 17.5242 15.4669 20.0621 14.237 23.0314C13.007 26.0007 12.6852 29.268 13.3122 32.4202C13.9393 35.5724 15.4869 38.4679 17.7595 40.7405C20.0321 43.0131 22.9276 44.5607 26.0798 45.1878C29.232 45.8148 32.4993 45.493 35.4686 44.263C38.4379 43.0331 40.9758 40.9503 42.7614 38.278C44.547 35.6057 45.5 32.4639 45.5 29.25C43.5296 29.4411 41.5603 28.8759 39.9912 27.6689C38.4222 26.4619 37.3707 24.7035 37.05 22.75C35.8389 22.7886 34.6354 22.5446 33.535 22.0371C32.4345 21.5297 31.4675 20.7728 30.7105 19.8266C29.9535 18.8804 29.4274 17.7708 29.1739 16.5858C28.9204 15.4009 28.9464 14.1731 29.25 13Z"
+                            stroke="#FFE3CC" stroke-width="3.24998" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M24.0477 24.6988C25.1246 24.6988 25.9977 23.8258 25.9977 22.7488C25.9977 21.6719 25.1246 20.7988 24.0477 20.7988C22.9707 20.7988 22.0977 21.6719 22.0977 22.7488C22.0977 23.8258 22.9707 24.6988 24.0477 24.6988Z"
+                            fill="#FFE3CC" />
+                        <path
+                            d="M29.2508 34.4488C30.3277 34.4488 31.2008 33.5758 31.2008 32.4988C31.2008 31.4219 30.3277 30.5488 29.2508 30.5488C28.1738 30.5488 27.3008 31.4219 27.3008 32.4988C27.3008 33.5758 28.1738 34.4488 29.2508 34.4488Z"
+                            fill="#FFE3CC" />
+                        <path
+                            d="M19.5008 31.1988C20.5777 31.1988 21.4508 30.3258 21.4508 29.2488C21.4508 28.1719 20.5777 27.2988 19.5008 27.2988C18.4238 27.2988 17.5508 28.1719 17.5508 29.2488C17.5508 30.3258 18.4238 31.1988 19.5008 31.1988Z"
+                            fill="#FFE3CC" />
+                    </svg>
+                </span>
+                <br class="shop-fav-title-break">
+                Favorite Snacks
+                <span class="shop-fav-title-icon shop-fav-title-icon--desktop" aria-hidden="true">
+                    <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M29.25 58.5C45.4043 58.5 58.5 45.4043 58.5 29.25C58.5 13.0957 45.4043 0 29.25 0C13.0957 0 0 13.0957 0 29.25C0 45.4043 13.0957 58.5 29.25 58.5Z"
+                            fill="#FF6C7F" />
+                        <path
+                            d="M29.25 13C26.0361 13 22.8943 13.953 20.222 15.7386C17.5497 17.5242 15.4669 20.0621 14.237 23.0314C13.007 26.0007 12.6852 29.268 13.3122 32.4202C13.9393 35.5724 15.4869 38.4679 17.7595 40.7405C20.0321 43.0131 22.9276 44.5607 26.0798 45.1878C29.232 45.8148 32.4993 45.493 35.4686 44.263C38.4379 43.0331 40.9758 40.9503 42.7614 38.278C44.547 35.6057 45.5 32.4639 45.5 29.25C43.5296 29.4411 41.5603 28.8759 39.9912 27.6689C38.4222 26.4619 37.3707 24.7035 37.05 22.75C35.8389 22.7886 34.6354 22.5446 33.535 22.0371C32.4345 21.5297 31.4675 20.7728 30.7105 19.8266C29.9535 18.8804 29.4274 17.7708 29.1739 16.5858C28.9204 15.4009 28.9464 14.1731 29.25 13Z"
+                            stroke="#FFE3CC" stroke-width="3.24998" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M24.0477 24.6988C25.1246 24.6988 25.9977 23.8258 25.9977 22.7488C25.9977 21.6719 25.1246 20.7988 24.0477 20.7988C22.9707 20.7988 22.0977 21.6719 22.0977 22.7488C22.0977 23.8258 22.9707 24.6988 24.0477 24.6988Z"
+                            fill="#FFE3CC" />
+                        <path
+                            d="M29.2508 34.4488C30.3277 34.4488 31.2008 33.5758 31.2008 32.4988C31.2008 31.4219 30.3277 30.5488 29.2508 30.5488C28.1738 30.5488 27.3008 31.4219 27.3008 32.4988C27.3008 33.5758 28.1738 34.4488 29.2508 34.4488Z"
+                            fill="#FFE3CC" />
+                        <path
+                            d="M19.5008 31.1988C20.5777 31.1988 21.4508 30.3258 21.4508 29.2488C21.4508 28.1719 20.5777 27.2988 19.5008 27.2988C18.4238 27.2988 17.5508 28.1719 17.5508 29.2488C17.5508 30.3258 18.4238 31.1988 19.5008 31.1988Z"
+                            fill="#FFE3CC" />
+                    </svg>
+                </span>
+            </h2>
+
+            <div class="shop-fav-filters" role="tablist" aria-label="Filter products">
+                <button type="button" class="shop-fav-filter is-active" data-filter="all" role="tab"
+                    aria-selected="true">All</button>
+                <button type="button" class="shop-fav-filter" data-filter="breads" role="tab"
+                    aria-selected="false">Breads</button>
+                <button type="button" class="shop-fav-filter" data-filter="cake" role="tab"
+                    aria-selected="false">Cake</button>
+                <button type="button" class="shop-fav-filter" data-filter="sweets" role="tab"
+                    aria-selected="false">Sweets</button>
+                <button type="button" class="shop-fav-filter" data-filter="sandwiches" role="tab"
+                    aria-selected="false">Sandwiches</button>
+            </div>
+
+            <div class="swiper shop-fav-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide shop-fav-card" data-category="cake">
+                        <img src="assets/images/Component 290.png" alt="Cheese in Chocolate cake" loading="lazy">
+                        <div class="shop-fav-card-info">
+                            <div class="shop-fav-card-text">
+                                <h3 class="shop-fav-card-title">Cheese in Chocolate</h3>
+                                <p class="shop-fav-card-price">$150</p>
+                            </div>
+                            <button type="button" class="shop-fav-card-btn"
+                                aria-label="Add Cheese in Chocolate to cart">
+                                <svg width="13" height="18" viewBox="0 0 13 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 4.99994V2.49994C2.50001 2.0611 2.61553 1.63 2.83496 1.24996C3.05439 0.86992 3.36998 0.55433 3.75003 0.33492C4.13007 0.11551 4.56118 0 5.00002 0C5.43885 0 5.86996 0.11552 6.25 0.33494C6.63 0.11552 7.0611 0 7.5 0C7.9388 0 8.3699 0.11551 8.75 0.33492C9.13 0.55433 9.4456 0.86992 9.665 1.24996C9.8845 1.63 10 2.0611 10 2.49994V4.99994H10.625C11.1223 4.99994 11.5992 5.19748 11.9508 5.54911C12.3025 5.90074 12.5 6.37766 12.5 6.87494V14.9999C12.5 15.663 12.2366 16.2989 11.7678 16.7677C11.2989 17.2365 10.663 17.4999 10 17.4999H2.5C1.83696 17.4999 1.20107 17.2365 0.73223 16.7677C0.26339 16.2989 0 15.663 0 14.9999V6.87494C0 6.37766 0.19754 5.90074 0.54917 5.54911C0.90081 5.19748 1.37772 4.99994 1.875 4.99994H2.5ZM3.75 2.49994V4.99994H6.25V2.49994C6.25 2.16842 6.1183 1.85047 5.88388 1.61605C5.64946 1.38163 5.33152 1.24994 5 1.24994C4.66848 1.24994 4.35054 1.38163 4.11612 1.61605C3.8817 1.85047 3.75 2.16842 3.75 2.49994ZM10 16.2499C10.3315 16.2499 10.6495 16.1182 10.8839 15.8838C11.1183 15.6494 11.25 15.3315 11.25 14.9999V6.87494C11.25 6.70918 11.1842 6.55021 11.0669 6.433C10.9497 6.31578 10.7908 6.24994 10.625 6.24994H8.75V14.9999C8.75 15.3315 8.8817 15.6494 9.1161 15.8838C9.3505 16.1182 9.6685 16.2499 10 16.2499ZM7.5 6.24994H1.875C1.70924 6.24994 1.55027 6.31578 1.43306 6.433C1.31585 6.55021 1.25 6.70918 1.25 6.87494V14.9999C1.25 15.3315 1.3817 15.6494 1.61612 15.8838C1.85054 16.1182 2.16848 16.2499 2.5 16.2499H7.835C7.615 15.8701 7.4994 15.4389 7.5 14.9999V6.24994ZM7.5 2.49994V4.99994H8.75V2.49994C8.7501 2.30908 8.7066 2.12073 8.6227 1.94932C8.5387 1.77792 8.4167 1.628 8.2658 1.51107C8.115 1.39414 7.9394 1.3133 7.7525 1.27476C7.5656 1.23621 7.3723 1.24097 7.1875 1.28869C7.3875 1.64744 7.5 2.06119 7.5 2.49994Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide shop-fav-card" data-category="sweets">
+                        <img src="assets/images/Component 291.png" alt="Cheese in Chocolate donuts" loading="lazy">
+                        <div class="shop-fav-card-info">
+                            <div class="shop-fav-card-text">
+                                <h3 class="shop-fav-card-title">Cheese in Chocolate</h3>
+                                <p class="shop-fav-card-price">$150</p>
+                            </div>
+                            <button type="button" class="shop-fav-card-btn"
+                                aria-label="Add Cheese in Chocolate to cart">
+                                <svg width="13" height="18" viewBox="0 0 13 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 4.99994V2.49994C2.50001 2.0611 2.61553 1.63 2.83496 1.24996C3.05439 0.86992 3.36998 0.55433 3.75003 0.33492C4.13007 0.11551 4.56118 0 5.00002 0C5.43885 0 5.86996 0.11552 6.25 0.33494C6.63 0.11552 7.0611 0 7.5 0C7.9388 0 8.3699 0.11551 8.75 0.33492C9.13 0.55433 9.4456 0.86992 9.665 1.24996C9.8845 1.63 10 2.0611 10 2.49994V4.99994H10.625C11.1223 4.99994 11.5992 5.19748 11.9508 5.54911C12.3025 5.90074 12.5 6.37766 12.5 6.87494V14.9999C12.5 15.663 12.2366 16.2989 11.7678 16.7677C11.2989 17.2365 10.663 17.4999 10 17.4999H2.5C1.83696 17.4999 1.20107 17.2365 0.73223 16.7677C0.26339 16.2989 0 15.663 0 14.9999V6.87494C0 6.37766 0.19754 5.90074 0.54917 5.54911C0.90081 5.19748 1.37772 4.99994 1.875 4.99994H2.5ZM3.75 2.49994V4.99994H6.25V2.49994C6.25 2.16842 6.1183 1.85047 5.88388 1.61605C5.64946 1.38163 5.33152 1.24994 5 1.24994C4.66848 1.24994 4.35054 1.38163 4.11612 1.61605C3.8817 1.85047 3.75 2.16842 3.75 2.49994ZM10 16.2499C10.3315 16.2499 10.6495 16.1182 10.8839 15.8838C11.1183 15.6494 11.25 15.3315 11.25 14.9999V6.87494C11.25 6.70918 11.1842 6.55021 11.0669 6.433C10.9497 6.31578 10.7908 6.24994 10.625 6.24994H8.75V14.9999C8.75 15.3315 8.8817 15.6494 9.1161 15.8838C9.3505 16.1182 9.6685 16.2499 10 16.2499ZM7.5 6.24994H1.875C1.70924 6.24994 1.55027 6.31578 1.43306 6.433C1.31585 6.55021 1.25 6.70918 1.25 6.87494V14.9999C1.25 15.3315 1.3817 15.6494 1.61612 15.8838C1.85054 16.1182 2.16848 16.2499 2.5 16.2499H7.835C7.615 15.8701 7.4994 15.4389 7.5 14.9999V6.24994ZM7.5 2.49994V4.99994H8.75V2.49994C8.7501 2.30908 8.7066 2.12073 8.6227 1.94932C8.5387 1.77792 8.4167 1.628 8.2658 1.51107C8.115 1.39414 7.9394 1.3133 7.7525 1.27476C7.5656 1.23621 7.3723 1.24097 7.1875 1.28869C7.3875 1.64744 7.5 2.06119 7.5 2.49994Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide shop-fav-card" data-category="sandwiches">
+                        <img src="assets/images/Component 292.png" alt="Cheese in Chocolate pastries" loading="lazy">
+                        <div class="shop-fav-card-info">
+                            <div class="shop-fav-card-text">
+                                <h3 class="shop-fav-card-title">Cheese in Chocolate</h3>
+                                <p class="shop-fav-card-price">$150</p>
+                            </div>
+                            <button type="button" class="shop-fav-card-btn"
+                                aria-label="Add Cheese in Chocolate to cart">
+                                <svg width="13" height="18" viewBox="0 0 13 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 4.99994V2.49994C2.50001 2.0611 2.61553 1.63 2.83496 1.24996C3.05439 0.86992 3.36998 0.55433 3.75003 0.33492C4.13007 0.11551 4.56118 0 5.00002 0C5.43885 0 5.86996 0.11552 6.25 0.33494C6.63 0.11552 7.0611 0 7.5 0C7.9388 0 8.3699 0.11551 8.75 0.33492C9.13 0.55433 9.4456 0.86992 9.665 1.24996C9.8845 1.63 10 2.0611 10 2.49994V4.99994H10.625C11.1223 4.99994 11.5992 5.19748 11.9508 5.54911C12.3025 5.90074 12.5 6.37766 12.5 6.87494V14.9999C12.5 15.663 12.2366 16.2989 11.7678 16.7677C11.2989 17.2365 10.663 17.4999 10 17.4999H2.5C1.83696 17.4999 1.20107 17.2365 0.73223 16.7677C0.26339 16.2989 0 15.663 0 14.9999V6.87494C0 6.37766 0.19754 5.90074 0.54917 5.54911C0.90081 5.19748 1.37772 4.99994 1.875 4.99994H2.5ZM3.75 2.49994V4.99994H6.25V2.49994C6.25 2.16842 6.1183 1.85047 5.88388 1.61605C5.64946 1.38163 5.33152 1.24994 5 1.24994C4.66848 1.24994 4.35054 1.38163 4.11612 1.61605C3.8817 1.85047 3.75 2.16842 3.75 2.49994ZM10 16.2499C10.3315 16.2499 10.6495 16.1182 10.8839 15.8838C11.1183 15.6494 11.25 15.3315 11.25 14.9999V6.87494C11.25 6.70918 11.1842 6.55021 11.0669 6.433C10.9497 6.31578 10.7908 6.24994 10.625 6.24994H8.75V14.9999C8.75 15.3315 8.8817 15.6494 9.1161 15.8838C9.3505 16.1182 9.6685 16.2499 10 16.2499ZM7.5 6.24994H1.875C1.70924 6.24994 1.55027 6.31578 1.43306 6.433C1.31585 6.55021 1.25 6.70918 1.25 6.87494V14.9999C1.25 15.3315 1.3817 15.6494 1.61612 15.8838C1.85054 16.1182 2.16848 16.2499 2.5 16.2499H7.835C7.615 15.8701 7.4994 15.4389 7.5 14.9999V6.24994ZM7.5 2.49994V4.99994H8.75V2.49994C8.7501 2.30908 8.7066 2.12073 8.6227 1.94932C8.5387 1.77792 8.4167 1.628 8.2658 1.51107C8.115 1.39414 7.9394 1.3133 7.7525 1.27476C7.5656 1.23621 7.3723 1.24097 7.1875 1.28869C7.3875 1.64744 7.5 2.06119 7.5 2.49994Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide shop-fav-card" data-category="breads">
+                        <img src="assets/images/am02clipped.webm.png" alt="Cheese in Chocolate bread" loading="lazy">
+                        <div class="shop-fav-card-info">
+                            <div class="shop-fav-card-text">
+                                <h3 class="shop-fav-card-title">Cheese in Chocolate</h3>
+                                <p class="shop-fav-card-price">$150</p>
+                            </div>
+                            <button type="button" class="shop-fav-card-btn"
+                                aria-label="Add Cheese in Chocolate to cart">
+                                <svg width="13" height="18" viewBox="0 0 13 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 4.99994V2.49994C2.50001 2.0611 2.61553 1.63 2.83496 1.24996C3.05439 0.86992 3.36998 0.55433 3.75003 0.33492C4.13007 0.11551 4.56118 0 5.00002 0C5.43885 0 5.86996 0.11552 6.25 0.33494C6.63 0.11552 7.0611 0 7.5 0C7.9388 0 8.3699 0.11551 8.75 0.33492C9.13 0.55433 9.4456 0.86992 9.665 1.24996C9.8845 1.63 10 2.0611 10 2.49994V4.99994H10.625C11.1223 4.99994 11.5992 5.19748 11.9508 5.54911C12.3025 5.90074 12.5 6.37766 12.5 6.87494V14.9999C12.5 15.663 12.2366 16.2989 11.7678 16.7677C11.2989 17.2365 10.663 17.4999 10 17.4999H2.5C1.83696 17.4999 1.20107 17.2365 0.73223 16.7677C0.26339 16.2989 0 15.663 0 14.9999V6.87494C0 6.37766 0.19754 5.90074 0.54917 5.54911C0.90081 5.19748 1.37772 4.99994 1.875 4.99994H2.5ZM3.75 2.49994V4.99994H6.25V2.49994C6.25 2.16842 6.1183 1.85047 5.88388 1.61605C5.64946 1.38163 5.33152 1.24994 5 1.24994C4.66848 1.24994 4.35054 1.38163 4.11612 1.61605C3.8817 1.85047 3.75 2.16842 3.75 2.49994ZM10 16.2499C10.3315 16.2499 10.6495 16.1182 10.8839 15.8838C11.1183 15.6494 11.25 15.3315 11.25 14.9999V6.87494C11.25 6.70918 11.1842 6.55021 11.0669 6.433C10.9497 6.31578 10.7908 6.24994 10.625 6.24994H8.75V14.9999C8.75 15.3315 8.8817 15.6494 9.1161 15.8838C9.3505 16.1182 9.6685 16.2499 10 16.2499ZM7.5 6.24994H1.875C1.70924 6.24994 1.55027 6.31578 1.43306 6.433C1.31585 6.55021 1.25 6.70918 1.25 6.87494V14.9999C1.25 15.3315 1.3817 15.6494 1.61612 15.8838C1.85054 16.1182 2.16848 16.2499 2.5 16.2499H7.835C7.615 15.8701 7.4994 15.4389 7.5 14.9999V6.24994ZM7.5 2.49994V4.99994H8.75V2.49994C8.7501 2.30908 8.7066 2.12073 8.6227 1.94932C8.5387 1.77792 8.4167 1.628 8.2658 1.51107C8.115 1.39414 7.9394 1.3133 7.7525 1.27476C7.5656 1.23621 7.3723 1.24097 7.1875 1.28869C7.3875 1.64744 7.5 2.06119 7.5 2.49994Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide shop-fav-card" data-category="cake">
+                        <img src="assets/images/Component 290.png" alt="Cheese in Chocolate cake" loading="lazy">
+                        <div class="shop-fav-card-info">
+                            <div class="shop-fav-card-text">
+                                <h3 class="shop-fav-card-title">Cheese in Chocolate</h3>
+                                <p class="shop-fav-card-price">$150</p>
+                            </div>
+                            <button type="button" class="shop-fav-card-btn"
+                                aria-label="Add Cheese in Chocolate to cart">
+                                <svg width="13" height="18" viewBox="0 0 13 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 4.99994V2.49994C2.50001 2.0611 2.61553 1.63 2.83496 1.24996C3.05439 0.86992 3.36998 0.55433 3.75003 0.33492C4.13007 0.11551 4.56118 0 5.00002 0C5.43885 0 5.86996 0.11552 6.25 0.33494C6.63 0.11552 7.0611 0 7.5 0C7.9388 0 8.3699 0.11551 8.75 0.33492C9.13 0.55433 9.4456 0.86992 9.665 1.24996C9.8845 1.63 10 2.0611 10 2.49994V4.99994H10.625C11.1223 4.99994 11.5992 5.19748 11.9508 5.54911C12.3025 5.90074 12.5 6.37766 12.5 6.87494V14.9999C12.5 15.663 12.2366 16.2989 11.7678 16.7677C11.2989 17.2365 10.663 17.4999 10 17.4999H2.5C1.83696 17.4999 1.20107 17.2365 0.73223 16.7677C0.26339 16.2989 0 15.663 0 14.9999V6.87494C0 6.37766 0.19754 5.90074 0.54917 5.54911C0.90081 5.19748 1.37772 4.99994 1.875 4.99994H2.5ZM3.75 2.49994V4.99994H6.25V2.49994C6.25 2.16842 6.1183 1.85047 5.88388 1.61605C5.64946 1.38163 5.33152 1.24994 5 1.24994C4.66848 1.24994 4.35054 1.38163 4.11612 1.61605C3.8817 1.85047 3.75 2.16842 3.75 2.49994ZM10 16.2499C10.3315 16.2499 10.6495 16.1182 10.8839 15.8838C11.1183 15.6494 11.25 15.3315 11.25 14.9999V6.87494C11.25 6.70918 11.1842 6.55021 11.0669 6.433C10.9497 6.31578 10.7908 6.24994 10.625 6.24994H8.75V14.9999C8.75 15.3315 8.8817 15.6494 9.1161 15.8838C9.3505 16.1182 9.6685 16.2499 10 16.2499ZM7.5 6.24994H1.875C1.70924 6.24994 1.55027 6.31578 1.43306 6.433C1.31585 6.55021 1.25 6.70918 1.25 6.87494V14.9999C1.25 15.3315 1.3817 15.6494 1.61612 15.8838C1.85054 16.1182 2.16848 16.2499 2.5 16.2499H7.835C7.615 15.8701 7.4994 15.4389 7.5 14.9999V6.24994ZM7.5 2.49994V4.99994H8.75V2.49994C8.7501 2.30908 8.7066 2.12073 8.6227 1.94932C8.5387 1.77792 8.4167 1.628 8.2658 1.51107C8.115 1.39414 7.9394 1.3133 7.7525 1.27476C7.5656 1.23621 7.3723 1.24097 7.1875 1.28869C7.3875 1.64744 7.5 2.06119 7.5 2.49994Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide shop-fav-card" data-category="sweets">
+                        <img src="assets/images/Component 291.png" alt="Cheese in Chocolate donuts" loading="lazy">
+                        <div class="shop-fav-card-info">
+                            <div class="shop-fav-card-text">
+                                <h3 class="shop-fav-card-title">Cheese in Chocolate</h3>
+                                <p class="shop-fav-card-price">$150</p>
+                            </div>
+                            <button type="button" class="shop-fav-card-btn"
+                                aria-label="Add Cheese in Chocolate to cart">
+                                <svg width="13" height="18" viewBox="0 0 13 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.5 4.99994V2.49994C2.50001 2.0611 2.61553 1.63 2.83496 1.24996C3.05439 0.86992 3.36998 0.55433 3.75003 0.33492C4.13007 0.11551 4.56118 0 5.00002 0C5.43885 0 5.86996 0.11552 6.25 0.33494C6.63 0.11552 7.0611 0 7.5 0C7.9388 0 8.3699 0.11551 8.75 0.33492C9.13 0.55433 9.4456 0.86992 9.665 1.24996C9.8845 1.63 10 2.0611 10 2.49994V4.99994H10.625C11.1223 4.99994 11.5992 5.19748 11.9508 5.54911C12.3025 5.90074 12.5 6.37766 12.5 6.87494V14.9999C12.5 15.663 12.2366 16.2989 11.7678 16.7677C11.2989 17.2365 10.663 17.4999 10 17.4999H2.5C1.83696 17.4999 1.20107 17.2365 0.73223 16.7677C0.26339 16.2989 0 15.663 0 14.9999V6.87494C0 6.37766 0.19754 5.90074 0.54917 5.54911C0.90081 5.19748 1.37772 4.99994 1.875 4.99994H2.5ZM3.75 2.49994V4.99994H6.25V2.49994C6.25 2.16842 6.1183 1.85047 5.88388 1.61605C5.64946 1.38163 5.33152 1.24994 5 1.24994C4.66848 1.24994 4.35054 1.38163 4.11612 1.61605C3.8817 1.85047 3.75 2.16842 3.75 2.49994ZM10 16.2499C10.3315 16.2499 10.6495 16.1182 10.8839 15.8838C11.1183 15.6494 11.25 15.3315 11.25 14.9999V6.87494C11.25 6.70918 11.1842 6.55021 11.0669 6.433C10.9497 6.31578 10.7908 6.24994 10.625 6.24994H8.75V14.9999C8.75 15.3315 8.8817 15.6494 9.1161 15.8838C9.3505 16.1182 9.6685 16.2499 10 16.2499ZM7.5 6.24994H1.875C1.70924 6.24994 1.55027 6.31578 1.43306 6.433C1.31585 6.55021 1.25 6.70918 1.25 6.87494V14.9999C1.25 15.3315 1.3817 15.6494 1.61612 15.8838C1.85054 16.1182 2.16848 16.2499 2.5 16.2499H7.835C7.615 15.8701 7.4994 15.4389 7.5 14.9999V6.24994ZM7.5 2.49994V4.99994H8.75V2.49994C8.7501 2.30908 8.7066 2.12073 8.6227 1.94932C8.5387 1.77792 8.4167 1.628 8.2658 1.51107C8.115 1.39414 7.9394 1.3133 7.7525 1.27476C7.5656 1.23621 7.3723 1.24097 7.1875 1.28869C7.3875 1.64744 7.5 2.06119 7.5 2.49994Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="shop-fav-pagination"></div>
+        </div>
+    </section>
+    <script>
+        // ============================================================
+        // SHOP YOUR FAVORITE SNACKS
+        // Paste this block into your main <script> (it reuses the same
+        // Swiper library already loaded on the page — no extra include
+        // needed since Featured Products already loads Swiper).
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', function () {
+            var sectionEl = document.querySelector('.shop-fav-section');
+            if (!sectionEl) return;
+
+            var swiperEl = sectionEl.querySelector('.shop-fav-swiper');
+            var slides = sectionEl.querySelectorAll('.shop-fav-card');
+            var filters = sectionEl.querySelectorAll('.shop-fav-filter');
+
+            var shopFavSwiper = new Swiper(swiperEl, {
+                slidesPerView: 1.12,
+                spaceBetween: 8,
+                watchOverflow: true,
+                pagination: {
+                    el: sectionEl.querySelector('.shop-fav-pagination'),
+                    clickable: true
+                },
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 8
+                    }
+                }
+            });
+
+            filters.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    filters.forEach(function (b) {
+                        b.classList.remove('is-active');
+                        b.setAttribute('aria-selected', 'false');
+                    });
+                    btn.classList.add('is-active');
+                    btn.setAttribute('aria-selected', 'true');
+
+                    var filter = btn.getAttribute('data-filter');
+
+                    slides.forEach(function (slide) {
+                        var match = filter === 'all' || slide.getAttribute('data-category') === filter;
+                        slide.style.display = match ? '' : 'none';
+                    });
+
+                    shopFavSwiper.update();
+                    shopFavSwiper.slideTo(0);
+                });
+            });
+        });
+    </script>
 
 
     <!-- ============================================================
      STORY SECTION — markup + its own CSS
      ============================================================ -->
-<style>
-  .story {
-    position: relative;
-    overflow: hidden;
-    padding: 80px 0px;
-    background: linear-gradient(220.57deg, #b7d8f2 10.88%, #b7d8f2 89.12%);
-    border-radius: 24px;
-  }
-  .story-inner {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0px 80px;
-  }
-  .story-heading {
-    font-family: "GT Walsheim Trial", "Poppins", sans-serif;
-    font-weight: 900; /* -> GTWalsheimTrial-UBd */
-    font-size: 52px;
-    line-height: 62px;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: #16283a;
-    margin-bottom: 60px;
-    max-width: 943px;
-  }
-  .story-heading span {
-    display: block;
-  }
+    <style>
+        .story {
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0px;
+            background: linear-gradient(220.57deg, #b7d8f2 10.88%, #b7d8f2 89.12%);
+            border-radius: 24px;
+        }
 
-  .story-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 50% / 50% */
-    gap: 72px;
-    align-items: center;
-  }
+        .story-inner {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0px 80px;
+        }
 
-  /* ---- Left: original photo (pill) + text hugging its outline ---- */
-  .story-media {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: 600 / 760;
-    justify-self: center;
-  }
-  /* the text ring hugs the pill outline; the letters flow around it */
-  .story-ring {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
-  }
-  .story-ring svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-    overflow: visible;
-  }
-  .story-ring-text {
-    fill: #16283a;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-  /* the original image, shown in full, rounded into a pill via border-radius */
-  .story-photo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-    aspect-ratio: 568 / 783; /* Figma frame ratio -> vertical pill */
-    border-radius: 788px; /* >= half width => stadium / pill shape */
-    overflow: hidden;
-    background: #cfe0f0;
-    box-shadow: 0 24px 55px rgba(22, 40, 58, 0.22);
-  }
-  .story-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-  }
+        .story-heading {
+            font-family: "GT Walsheim Trial", "Poppins", sans-serif;
+            font-weight: 900;
+            /* -> GTWalsheimTrial-UBd */
+            font-size: 52px;
+            line-height: 62px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            color: #16283a;
+            margin-bottom: 60px;
+            max-width: 943px;
+        }
 
-  /* ---- Right: content ---- */
-  .story-content {
-    max-width: 100%;
-  }
-  .story-p {
-    color: #000000;
-    margin-bottom: 30px;
-    font-family: Lato;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 31.2px;
-    letter-spacing: 0px;
-    vertical-align: middle;
-  }
+        .story-heading span {
+            display: block;
+        }
 
-  .story-stores {
-    display: flex;
-    align-items: center;
-    gap: 26px;
-    margin-top: 74px;
-  }
-  .story-stores-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-  }
-  .story-stores-text p {
-    font-family: Lato;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    max-width: 244px;
-    color: #000000;
-    padding-bottom: 26px;
-  }
-  .story-stores-link {
-    display: inline-flex;
-    align-items: center;
-    font-family: Lato;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    gap: 2px;
-  }
-  .story-stores-link svg {
-    width: 18px;
-    height: 18px;
-  }
-  .story-stores-link:hover {
-    color: #ee93b4;
-    gap: 14px;
-  }
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* 50% / 50% */
+            gap: 72px;
+            align-items: center;
+        }
 
-  /* ---- Scroll-in reveal ---- */
-  .story.reveal .story-heading,
-  .story.reveal .story-media,
-  .story.reveal .story-p,
-  .story.reveal .story-stores {
-    opacity: 0;
-    transform: translateY(34px);
-    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  .story.reveal .story-media {
-    transform: translateY(34px) scale(0.9);
-  }
-  .story.reveal.is-in .story-heading,
-  .story.reveal.is-in .story-media,
-  .story.reveal.is-in .story-p,
-  .story.reveal.is-in .story-stores {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .story.reveal.is-in .story-media {
-    transform: translateY(0) scale(1);
-    transition-delay: 0.15s;
-  }
-  .story.reveal.is-in .story-heading {
-    transition-delay: 0.05s;
-  }
-  .story.reveal.is-in .story-p:nth-of-type(1) {
-    transition-delay: 0.28s;
-  }
-  .story.reveal.is-in .story-p:nth-of-type(2) {
-    transition-delay: 0.38s;
-  }
-  .story.reveal.is-in .story-p:nth-of-type(3) {
-    transition-delay: 0.48s;
-  }
-  .story.reveal.is-in .story-stores {
-    transition-delay: 0.6s;
-  }
+        /* ---- Left: original photo (pill) + text hugging its outline ---- */
+        .story-media {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 600 / 760;
+            justify-self: center;
+        }
 
-  /* ---- Tablet / mobile: stacked ---- */
-  @media (max-width: 1023px) {
-    .story {
-      padding: 60px 0px; /* side padding lives on .story-inner */
-    }
-    .story-inner {
-      padding: 0 40px;
-    }
-    .story-heading {
-      font-size: 32px;
-      margin-bottom: 36px;
-    }
-    .story-grid {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-    .story-media,
-    .story-content {
-      max-width: 100%;
-    }
-    .story-p {
-      font-size: 16px;
-    }
-  }
+        /* the text ring hugs the pill outline; the letters flow around it */
+        .story-ring {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
 
-  @media (max-width: 768px) {
-    .story-heading {
-      font-size: 36px;
-      line-height: normal;
-      margin-bottom: 35px;
-    }
-    .story-photo {
-      width: 90%;
-    }
-    /* photo is 90% here, so scale the text ring out to stay OUTSIDE it
+        .story-ring svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: visible;
+        }
+
+        .story-ring-text {
+            fill: #16283a;
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        /* the original image, shown in full, rounded into a pill via border-radius */
+        .story-photo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            aspect-ratio: 568 / 783;
+            /* Figma frame ratio -> vertical pill */
+            border-radius: 788px;
+            /* >= half width => stadium / pill shape */
+            overflow: hidden;
+            background: #cfe0f0;
+            box-shadow: 0 24px 55px rgba(22, 40, 58, 0.22);
+        }
+
+        .story-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        /* ---- Right: content ---- */
+        .story-content {
+            max-width: 100%;
+        }
+
+        .story-p {
+            color: #000000;
+            margin-bottom: 30px;
+            font-family: Lato;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 31.2px;
+            letter-spacing: 0px;
+            vertical-align: middle;
+        }
+
+        .story-stores {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            margin-top: 74px;
+        }
+
+        .story-stores-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .story-stores-text p {
+            font-family: Lato;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            max-width: 244px;
+            color: #000000;
+            padding-bottom: 26px;
+        }
+
+        .story-stores-link {
+            display: inline-flex;
+            align-items: center;
+            font-family: Lato;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            gap: 2px;
+        }
+
+        .story-stores-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .story-stores-link:hover {
+            color: #ee93b4;
+            gap: 14px;
+        }
+
+        /* ---- Scroll-in reveal ---- */
+        .story.reveal .story-heading,
+        .story.reveal .story-media,
+        .story.reveal .story-p,
+        .story.reveal .story-stores {
+            opacity: 0;
+            transform: translateY(34px);
+            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .story.reveal .story-media {
+            transform: translateY(34px) scale(0.9);
+        }
+
+        .story.reveal.is-in .story-heading,
+        .story.reveal.is-in .story-media,
+        .story.reveal.is-in .story-p,
+        .story.reveal.is-in .story-stores {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .story.reveal.is-in .story-media {
+            transform: translateY(0) scale(1);
+            transition-delay: 0.15s;
+        }
+
+        .story.reveal.is-in .story-heading {
+            transition-delay: 0.05s;
+        }
+
+        .story.reveal.is-in .story-p:nth-of-type(1) {
+            transition-delay: 0.28s;
+        }
+
+        .story.reveal.is-in .story-p:nth-of-type(2) {
+            transition-delay: 0.38s;
+        }
+
+        .story.reveal.is-in .story-p:nth-of-type(3) {
+            transition-delay: 0.48s;
+        }
+
+        .story.reveal.is-in .story-stores {
+            transition-delay: 0.6s;
+        }
+
+        /* ---- Tablet / mobile: stacked ---- */
+        @media (max-width: 1023px) {
+            .story {
+                padding: 60px 0px;
+                /* side padding lives on .story-inner */
+            }
+
+            .story-inner {
+                padding: 0 40px;
+            }
+
+            .story-heading {
+                font-size: 32px;
+                margin-bottom: 36px;
+            }
+
+            .story-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .story-media,
+            .story-content {
+                max-width: 100%;
+            }
+
+            .story-p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .story-heading {
+                font-size: 36px;
+                line-height: normal;
+                margin-bottom: 35px;
+            }
+
+            .story-photo {
+                width: 90%;
+            }
+
+            /* photo is 90% here, so scale the text ring out to stay OUTSIDE it
        (0.90 photo vs 0.797 path -> needs ~1.2x to clear it, same gap as desktop) */
-    .story-ring {
-      transform: scale(1.2);
-    }
-    .story-grid {
-      gap: 40px;
-    }
-    .story-p {
-      font-size: 20px;
-      line-height: normal;
-      margin-bottom: 15px;
-    }
-    .story-stores {
-      margin-top: 55px;
-    }
-  }
+            .story-ring {
+                transform: scale(1.2);
+            }
 
-  /* mobile side padding = 16px */
-  @media (max-width: 767px) {
-    .story-inner {
-      padding: 0 16px;
-    }
-  }
-</style>
+            .story-grid {
+                gap: 40px;
+            }
 
-<section class="story reveal" id="story" aria-labelledby="storyHeading">
-    <div class="story-inner">
-        <h2 class="story-heading" id="storyHeading">
-            Rooted in Tradition, Baked Fresh Daily
-        </h2>
+            .story-p {
+                font-size: 20px;
+                line-height: normal;
+                margin-bottom: 15px;
+            }
 
-        <div class="story-grid">
-            <!-- LEFT: original photo (pill) with text hugging its outline -->
-            <div class="story-media">
-                <div class="story-ring" aria-hidden="true">
-                    <svg viewBox="0 0 600 760">
-                        <defs>
-                            <!-- stadium / pill outline that hugs the photo edge -->
-                            <path id="storyRingPath"
-                                d="M61,295 A239,239 0 0 1 539,295 L539,465 A239,239 0 0 1 61,465 Z" />
-                        </defs>
-                        <text class="story-ring-text">
-                            <textPath id="storyTextPath" href="#storyRingPath" startOffset="0">Deli &amp;
-                                Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160;
-                                Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160;
-                                Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery
-                                &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays
-                                &#160;&#8226;&#160; Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp;
-                                Pastries Bakery &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering
-                                &amp; Party Trays &#160;&#8226;&#160; Deli &amp; Sandwiches &#160;&#8226;&#160;
-                                Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160; Wholesale Bakery
-                                &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160; Deli &amp;
-                                Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160;
-                                Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160;
-                                Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery
-                                &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays
-                                &#160;&#8226;&#160; </textPath>
-                        </text>
-                    </svg>
+            .story-stores {
+                margin-top: 55px;
+            }
+        }
+
+        /* mobile side padding = 16px */
+        @media (max-width: 767px) {
+            .story-inner {
+                padding: 0 16px;
+            }
+        }
+    </style>
+
+    <section class="story reveal" id="story" aria-labelledby="storyHeading">
+        <div class="story-inner">
+            <h2 class="story-heading" id="storyHeading">
+                Rooted in Tradition, Baked Fresh Daily
+            </h2>
+
+            <div class="story-grid">
+                <!-- LEFT: original photo (pill) with text hugging its outline -->
+                <div class="story-media">
+                    <div class="story-ring" aria-hidden="true">
+                        <svg viewBox="0 0 600 760">
+                            <defs>
+                                <!-- stadium / pill outline that hugs the photo edge -->
+                                <path id="storyRingPath"
+                                    d="M61,295 A239,239 0 0 1 539,295 L539,465 A239,239 0 0 1 61,465 Z" />
+                            </defs>
+                            <text class="story-ring-text">
+                                <textPath id="storyTextPath" href="#storyRingPath" startOffset="0">Deli &amp;
+                                    Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160;
+                                    Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160;
+                                    Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery
+                                    &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays
+                                    &#160;&#8226;&#160; Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp;
+                                    Pastries Bakery &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering
+                                    &amp; Party Trays &#160;&#8226;&#160; Deli &amp; Sandwiches &#160;&#8226;&#160;
+                                    Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160; Wholesale Bakery
+                                    &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160; Deli &amp;
+                                    Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery &#160;&#8226;&#160;
+                                    Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays &#160;&#8226;&#160;
+                                    Deli &amp; Sandwiches &#160;&#8226;&#160; Doughnuts &amp; Pastries Bakery
+                                    &#160;&#8226;&#160; Wholesale Bakery &#160;&#8226;&#160; Catering &amp; Party Trays
+                                    &#160;&#8226;&#160; </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="story-photo">
+                        <img src="assets/images/3b2fa1f1c65eae960ebf0b6c0a724a6ddb013124.png"
+                            alt="Hillcrest baker holding a fresh strawberry cake" />
+                    </div>
                 </div>
-                <div class="story-photo">
-                    <img src="assets/images/3b2fa1f1c65eae960ebf0b6c0a724a6ddb013124.png"
-                        alt="Hillcrest baker holding a fresh strawberry cake" />
-                </div>
-            </div>
 
-            <!-- RIGHT: content -->
-            <div class="story-content">
-                <p class="story-p">And in general — the business of people with absolutely
-                    &ldquo;unfrozen&rdquo; experience. To Mr.&nbsp;Pops.</p>
-                <p class="story-p">Now we feel like experimenters, actually, as in the beginning.</p>
-                <p class="story-p">We are like in a laboratory, where the result is tasted. If it suits us, it
-                    means it will definitely suit one of you!</p>
+                <!-- RIGHT: content -->
+                <div class="story-content">
+                    <p class="story-p">And in general — the business of people with absolutely
+                        &ldquo;unfrozen&rdquo; experience. To Mr.&nbsp;Pops.</p>
+                    <p class="story-p">Now we feel like experimenters, actually, as in the beginning.</p>
+                    <p class="story-p">We are like in a laboratory, where the result is tasted. If it suits us, it
+                        means it will definitely suit one of you!</p>
 
-                <div class="story-stores">
-                    <span class="story-stores-icon">
-                        <img src="assets/images/Frame%202147243354.png" alt="" />
-                    </span>
-                    <div class="story-stores-text">
-                        <p>&ldquo;Baked with original Parisian recipes, our pastries deliver bold flavors that
-                            surprise and delight.&rdquo;</p>
-                        <a href="#" class="story-stores-link">
-                            Find Our Stores
-                            <svg aria-hidden="true">
-                                <use href="#ic-arrow" />
-                            </svg>
-                        </a>
+                    <div class="story-stores">
+                        <span class="story-stores-icon">
+                            <img src="assets/images/Frame%202147243354.png" alt="" />
+                        </span>
+                        <div class="story-stores-text">
+                            <p>&ldquo;Baked with original Parisian recipes, our pastries deliver bold flavors that
+                                surprise and delight.&rdquo;</p>
+                            <a href="#" class="story-stores-link">
+                                Find Our Stores
+                                <svg aria-hidden="true">
+                                    <use href="#ic-arrow" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
-<!-- ============================================================
+    <!-- ============================================================
      WHOLESALE SECTION — markup + its own CSS
      ============================================================ -->
-<style>
-  .wholesale {
-    background: #f7f3ea;
-    padding: 80px 0px 60px;
-  }
-  .wholesale-inner {
-    position: relative;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0px 60px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-  }
-  .wholesale-media {
-    position: relative;
-    z-index: 2;
-    border-radius: 100px;
-    overflow: hidden;
-    height: 105%;
-   
-  }
-  .wholesale-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .wholesale-content {
-       position: relative;
-    z-index: 1;
-    background: #cfe2f5;
-    border-radius: 0px 32px 32px 0px;
-    padding: 89px 45px 89px 105px;
-    margin-left: -60px;
-  }
+    <style>
+        .wholesale {
+            background: #f7f3ea;
+            padding: 80px 0px 60px;
+        }
 
-  /* absolutely-positioned badges above the heading */
-  .wholesale-badge {
-    position: absolute;
-    z-index: 3;
-    display: flex !important;
-    align-items: center;
-    gap: 4px;
-    font-family: GT Walsheim Trial;
-font-style: Regular;
-font-size: 9.31px;
-leading-trim: NONE;
-line-height: 120%;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-color: #000;
-padding: 7px 11px;
-border-radius: 24px;
-  }
-  .wholesale-badge--pink {
-        border: 0.47px solid #FFFFFF;
-    background: #FF6C7F;
-    top: 10px;
-    right: 210px;
-    transform: rotate(10deg);
-  }
-  .wholesale-badge--dark {
-    border: 0.47px solid #FFFFFF;
-    background: #FFFFFF;
+        .wholesale-inner {
+            position: relative;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0px 60px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+        }
 
-   top: 54%;
-    right: 59%;
-    transform: rotate(-5deg);
-  }
-
-  .wholesale-heading {
-    position: relative;
-    font-family: "GT Walsheim Trial", "Poppins", sans-serif;
-    font-weight: 900;
-    font-size: 52px;
-    line-height: 1.02;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: #16283a;
-    margin-bottom: 30px;
-  }
-  .wholesale-heading span {
-    display: block;
-  }
-  .wholesale-text {
-    font-family: Lato;
-font-weight: 500;
-font-style: Medium;
-font-size: 18px;
-leading-trim: CAP_HEIGHT;
-line-height: 24px;
-letter-spacing: 0%;
-color: #000;
-    max-width: 535px;
-    margin-bottom: 30px;
-  }
-
-  .wholesale-features {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px 40px;
-    margin-bottom: 30px;
-           max-width: max-content;
-    width: 100%;
-    width: 100%;
-  }
-  .wholesale-features li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-   font-family: Lato;
-font-weight: 500;
-font-style: Medium;
-font-size: 16px;
-leading-trim: CAP_HEIGHT;
-line-height: 24px;
-letter-spacing: 0%;
-
-    color: #000;
-  }
-  .wholesale-features svg {
-    width: 22px;
-    height: 22px;
-    color: #16283a;
-    flex-shrink: 0;
-  }
-
-  /* button — the icon colour spreads out to fill the button on hover */
-  .wholesale-btn {
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    padding: 5px; /* requested 5px padding */
-    border-radius: 50px;
-    background: #ffffff;
-    border: 1px solid rgba(22, 40, 58, 0.14);
-  }
-  .wholesale-btn-label {
-    position: relative;
-    z-index: 2;
-    padding: 0 16px 0 20px;
-    transition: color 0.35s ease;
-    font-family: Lato;
-    font-weight: 900;
-    font-style: Black;
-    font-size: 16px;
-    leading-trim: NONE;
-    line-height: 21.2px;
-    letter-spacing: 2%;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: #000;
-  }
-  .wholesale-btn-icon {
-    position: relative;
-    z-index: 2;
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: #6fcbf0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .wholesale-btn-icon svg {
-    width: 18px;
-    height: 18px;
-    color: #ffffff;
-  }
-  /* fill layer is inset by the 5px padding, so the padding frame always stays */
-  .wholesale-btn-fill {
-    position: absolute;
-    inset: 5px;
-    z-index: 1;
-    border-radius: 50px;
-    overflow: hidden;
-    pointer-events: none;
-  }
-  /* the spreading circle starts exactly over the icon and scales out */
-  .wholesale-btn-fill::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: #6fcbf0;
-    transform: translateY(-50%) scale(1);
-    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .wholesale-btn:hover .wholesale-btn-fill::before {
-    transform: translateY(-50%) scale(16);
-  }
-  .wholesale-btn:hover .wholesale-btn-label {
-    color: #ffffff;
-  }
-  .wholesale-btn:hover {
-    border-color: #6fcbf0;
-    box-shadow: 0 12px 26px rgba(111, 203, 240, 0.35);
-  }
-
-  /* ---- Scroll-in reveal ---- */
-  .wholesale.reveal .wholesale-media,
-  .wholesale.reveal .wholesale-content {
-    opacity: 0;
-    transform: translateY(34px);
-    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  .wholesale.reveal.is-in .wholesale-media,
-  .wholesale.reveal.is-in .wholesale-content {
-    opacity: 1;
-    transform: none;
-  }
-  .wholesale.reveal.is-in .wholesale-content {
-    transition-delay: 0.12s;
-  }
-  span.\'new-cricel {
-    border: 1px solid #000000;
-    background: #fff;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    font-family: Lato;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 12px;
-    leading-trim: CAP_HEIGHT;
-    line-height: 24px;
-    letter-spacing: 0%;
-}
-span.dot-svg {
-    background: #000000;
-    width: 3px;
-    height: 3px;
-    border-radius: 9px;
-}
-
- .new-2nd .wholesale-media{
-    order: 2;
- }
-  .new-2nd .wholesale-content {
-    position: relative;
-    z-index: 1;
-    background: #cfe2f5;
-    border-radius: 32px 0px 0px 32px;
-    padding: 89px 105px 89px 60px;
-    margin-right: -60px;
-    order: 1;
-        margin-left: 0;
-}
-.new-2nd .wholesale-text {
-    max-width: 508px;
-}
-.new-2nd .wholesale-text strong{
-    font-weight: 900;
-}
-.new-2nd .wholesale-badge--pink {
-    border: 0.47px solid #FFFFFF;
-    background: #FF6C7F;
-    top: 10px;
-    right: 70px;
-    transform: rotate(5deg);
-}
-
-  @media (max-width: 1023px) {
-    .wholesale {
-      padding: 60px 0px 76px;
-    }
-    .wholesale-inner {
-      grid-template-columns: 1fr;
-      max-width: 520px;
-      padding: 0px 40x;
-    }
-    .wholesale-media {
-      aspect-ratio: 1 / 1;
-      border-radius: 24px;
-    }
-    .wholesale-content {
-      margin-left: 0;
-      margin-top: 18px;
-      padding: 46px 24px 40px;
-      border-radius: 26px;
-    }
-    .wholesale-heading {
-      font-size: 32px;
-    }
-    .wholesale-text {
-      font-size: 15px;
-    }
-    .wholesale-features {
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-    .wholesale-btn {
-      width: 100%;
-      justify-content: space-between;
-    }
-    .wholesale-badge--pink {
-      top: 30px;
-      left: auto;
-      right: 128px;
-    }
-    .wholesale-badge--dark {
-      top: 72px;
-      left: auto;
-      right: 34px;
-    }
-  }
-
-  /* mobile side padding = 16px */
-  @media (max-width: 767px) {
-    .new-2nd .wholesale-media{
-    order: unset;
- }
-  .new-2nd .wholesale-content {
-    position: relative;
-    z-index: unset;
-    background: #cfe2f5;
-    border-radius: unset;
-    padding: unset;
-    margin-right: unset;
-    order:unset;
-        margin-left: unset;
-         margin-left: 0;
-        margin-top: -18px;
-        padding: 40px 14px 32px;
-        border-radius: 0px 0px 0px 0px;
-}
-.new-2nd .wholesale-text {
-    max-width: unset;
-}
-    .wholesale {
-      padding: 25px 00px 25px;
-    }
-  .wholesale-inner {
-        max-width: 100%;
-        padding: 0px 16px;
-    }
-
-  
-    .wholesale-heading {
-      font-size: 36px;
-        margin-bottom: 24px;
-    }
-    .wholesale-badge--pink {
-      right: 96px;
-      top: 0;
-    }
         .wholesale-media {
-        aspect-ratio: unset;
-        border-radius: 20px;
-    }
+            position: relative;
+            z-index: 2;
+            border-radius: 100px;
+            overflow: hidden;
+            height: 105%;
+
+        }
+
+        .wholesale-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         .wholesale-content {
-        margin-left: 0;
-        margin-top: -18px;
-        padding: 40px 14px 32px;
-        border-radius: 0px 0px 20px 20px;
-    }
+            position: relative;
+            z-index: 1;
+            background: #cfe2f5;
+            border-radius: 0px 32px 32px 0px;
+            padding: 89px 45px 89px 105px;
+            margin-left: -60px;
+        }
+
+        /* absolutely-positioned badges above the heading */
+        .wholesale-badge {
+            position: absolute;
+            z-index: 3;
+            display: flex !important;
+            align-items: center;
+            gap: 4px;
+            font-family: GT Walsheim Trial;
+            font-style: Regular;
+            font-size: 9.31px;
+            leading-trim: NONE;
+            line-height: 120%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: #000;
+            padding: 7px 11px;
+            border-radius: 24px;
+        }
+
+        .wholesale-badge--pink {
+            border: 0.47px solid #FFFFFF;
+            background: #FF6C7F;
+            top: 10px;
+            right: 210px;
+            transform: rotate(10deg);
+        }
+
         .wholesale-badge--dark {
-        right: 0px;
-        top: 80%;
-    }
+            border: 0.47px solid #FFFFFF;
+            background: #FFFFFF;
+
+            top: 54%;
+            right: 59%;
+            transform: rotate(-5deg);
+        }
+
+        .wholesale-heading {
+            position: relative;
+            font-family: "GT Walsheim Trial", "Poppins", sans-serif;
+            font-weight: 900;
+            font-size: 52px;
+            line-height: 1.02;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            color: #16283a;
+            margin-bottom: 30px;
+        }
+
+        .wholesale-heading span {
+            display: block;
+        }
+
         .wholesale-text {
-        font-size: 16px;
-        margin-bottom: 24px;
-    }
-    .wholesale-features {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .wholesale-btn-label {
-    position: relative;
-    z-index: 2;
-    padding: 0 3px 0 10px;
-        font-size: 15px;
-    }
-    
-.new-2nd .wholesale-text strong{
-    font-weight: 900;
-}
-.new-2nd .wholesale-badge--pink {
-    border: 0.47px solid #FFFFFF;
-    background: #FF6C7F;
-    top: 20px;
-    right: 0px;
-    transform: rotate(5deg);
-}
-}
-</style>
+            font-family: Lato;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            leading-trim: CAP_HEIGHT;
+            line-height: 24px;
+            letter-spacing: 0%;
+            color: #000;
+            max-width: 535px;
+            margin-bottom: 30px;
+        }
 
-<section class="wholesale" aria-labelledby="wholesaleHeading">
-    <div class="wholesale-inner">
-        <div class="wholesale-media">
-            <!-- Swap src for your real photo (jpg/png). -->
-            <img src="assets/images/nicole-couch-soup.jpg.png"
-                alt="A table spread of fresh cakes, pastries and baked goods" />
+        .wholesale-features {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px 40px;
+            margin-bottom: 30px;
+            max-width: max-content;
+            width: 100%;
+            width: 100%;
+        }
+
+        .wholesale-features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: Lato;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            leading-trim: CAP_HEIGHT;
+            line-height: 24px;
+            letter-spacing: 0%;
+
+            color: #000;
+        }
+
+        .wholesale-features svg {
+            width: 22px;
+            height: 22px;
+            color: #16283a;
+            flex-shrink: 0;
+        }
+
+        /* button — the icon colour spreads out to fill the button on hover */
+        .wholesale-btn {
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            /* requested 5px padding */
+            border-radius: 50px;
+            background: #ffffff;
+            border: 1px solid rgba(22, 40, 58, 0.14);
+        }
+
+        .wholesale-btn-label {
+            position: relative;
+            z-index: 2;
+            padding: 0 16px 0 20px;
+            transition: color 0.35s ease;
+            font-family: Lato;
+            font-weight: 900;
+            font-style: Black;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 21.2px;
+            letter-spacing: 2%;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .wholesale-btn-icon {
+            position: relative;
+            z-index: 2;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #6fcbf0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wholesale-btn-icon svg {
+            width: 18px;
+            height: 18px;
+            color: #ffffff;
+        }
+
+        /* fill layer is inset by the 5px padding, so the padding frame always stays */
+        .wholesale-btn-fill {
+            position: absolute;
+            inset: 5px;
+            z-index: 1;
+            border-radius: 50px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        /* the spreading circle starts exactly over the icon and scales out */
+        .wholesale-btn-fill::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #6fcbf0;
+            transform: translateY(-50%) scale(1);
+            transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .wholesale-btn:hover .wholesale-btn-fill::before {
+            transform: translateY(-50%) scale(16);
+        }
+
+        .wholesale-btn:hover .wholesale-btn-label {
+            color: #ffffff;
+        }
+
+        .wholesale-btn:hover {
+            border-color: #6fcbf0;
+            box-shadow: 0 12px 26px rgba(111, 203, 240, 0.35);
+        }
+
+        /* ---- Scroll-in reveal ---- */
+        .wholesale.reveal .wholesale-media,
+        .wholesale.reveal .wholesale-content {
+            opacity: 0;
+            transform: translateY(34px);
+            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .wholesale.reveal.is-in .wholesale-media,
+        .wholesale.reveal.is-in .wholesale-content {
+            opacity: 1;
+            transform: none;
+        }
+
+        .wholesale.reveal.is-in .wholesale-content {
+            transition-delay: 0.12s;
+        }
+
+        span.\'new-cricel {
+            border: 1px solid #000000;
+            background: #fff;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            font-family: Lato;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 12px;
+            leading-trim: CAP_HEIGHT;
+            line-height: 24px;
+            letter-spacing: 0%;
+        }
+
+        span.dot-svg {
+            background: #000000;
+            width: 3px;
+            height: 3px;
+            border-radius: 9px;
+        }
+
+        .new-2nd .wholesale-media {
+            order: 2;
+        }
+
+        .new-2nd .wholesale-content {
+            position: relative;
+            z-index: 1;
+            background: #cfe2f5;
+            border-radius: 32px 0px 0px 32px;
+            padding: 89px 105px 89px 60px;
+            margin-right: -60px;
+            order: 1;
+            margin-left: 0;
+        }
+
+        .new-2nd .wholesale-text {
+            max-width: 508px;
+        }
+
+        .new-2nd .wholesale-text strong {
+            font-weight: 900;
+        }
+
+        .new-2nd .wholesale-badge--pink {
+            border: 0.47px solid #FFFFFF;
+            background: #FF6C7F;
+            top: 10px;
+            right: 70px;
+            transform: rotate(5deg);
+        }
+
+        @media (max-width: 1023px) {
+            .wholesale {
+                padding: 60px 0px 76px;
+            }
+
+            .wholesale-inner {
+                grid-template-columns: 1fr;
+                max-width: 520px;
+                padding: 0px 40x;
+            }
+
+            .wholesale-media {
+                aspect-ratio: 1 / 1;
+                border-radius: 24px;
+            }
+
+            .wholesale-content {
+                margin-left: 0;
+                margin-top: 18px;
+                padding: 46px 24px 40px;
+                border-radius: 26px;
+            }
+
+            .wholesale-heading {
+                font-size: 32px;
+            }
+
+            .wholesale-text {
+                font-size: 15px;
+            }
+
+            .wholesale-features {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .wholesale-btn {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .wholesale-badge--pink {
+                top: 30px;
+                left: auto;
+                right: 128px;
+            }
+
+            .wholesale-badge--dark {
+                top: 72px;
+                left: auto;
+                right: 34px;
+            }
+        }
+
+        /* mobile side padding = 16px */
+        @media (max-width: 767px) {
+            .new-2nd .wholesale-media {
+                order: unset;
+            }
+
+            .new-2nd .wholesale-content {
+                position: relative;
+                z-index: unset;
+                background: #cfe2f5;
+                border-radius: unset;
+                padding: unset;
+                margin-right: unset;
+                order: unset;
+                margin-left: unset;
+                margin-left: 0;
+                margin-top: -18px;
+                padding: 40px 14px 32px;
+                border-radius: 0px 0px 0px 0px;
+            }
+
+            .new-2nd .wholesale-text {
+                max-width: unset;
+            }
+
+            .wholesale {
+                padding: 25px 00px 25px;
+            }
+
+            .wholesale-inner {
+                max-width: 100%;
+                padding: 0px 16px;
+            }
+
+
+            .wholesale-heading {
+                font-size: 36px;
+                margin-bottom: 24px;
+            }
+
+            .wholesale-badge--pink {
+                right: 96px;
+                top: 0;
+            }
+
+            .wholesale-media {
+                aspect-ratio: unset;
+                border-radius: 20px;
+            }
+
+            .wholesale-content {
+                margin-left: 0;
+                margin-top: -18px;
+                padding: 40px 14px 32px;
+                border-radius: 0px 0px 20px 20px;
+            }
+
+            .wholesale-badge--dark {
+                right: 0px;
+                top: 80%;
+            }
+
+            .wholesale-text {
+                font-size: 16px;
+                margin-bottom: 24px;
+            }
+
+            .wholesale-features {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .wholesale-btn-label {
+                position: relative;
+                z-index: 2;
+                padding: 0 3px 0 10px;
+                font-size: 15px;
+            }
+
+            .new-2nd .wholesale-text strong {
+                font-weight: 900;
+            }
+
+            .new-2nd .wholesale-badge--pink {
+                border: 0.47px solid #FFFFFF;
+                background: #FF6C7F;
+                top: 20px;
+                right: 0px;
+                transform: rotate(5deg);
+            }
+        }
+    </style>
+
+    <section class="wholesale" aria-labelledby="wholesaleHeading">
+        <div class="wholesale-inner">
+            <div class="wholesale-media">
+                <!-- Swap src for your real photo (jpg/png). -->
+                <img src="assets/images/nicole-couch-soup.jpg.png"
+                    alt="A table spread of fresh cakes, pastries and baked goods" />
+            </div>
+
+            <div class="wholesale-content">
+
+
+                <h2 class="wholesale-heading" id="wholesaleHeading">
+                    <span>Wholesale</span>
+                    <span>Bakery Supply</span>
+                    <span class="wholesale-badge wholesale-badge--pink">
+                        <span class="dot-svg"></span>
+                        Cookie
+                    </span>
+                    <span class="wholesale-badge wholesale-badge--dark">
+                        <span class="dot-svg"></span>
+                        Cookie
+                    </span>
+                </h2>
+
+                <p class="wholesale-text">Fresh breads, pastries, desserts, and baked goods supplied daily to
+                    cafés, restaurants, grocery stores, schools, and local businesses. Reliable production,
+                    consistent quality, and bakery products made fresh every day.</p>
+
+                <ul class="wholesale-features">
+                    <li>
+                        <span class="'new-cricel">
+                            ✔
+                        </span>
+                        Fresh Daily Production
+                    </li>
+                    <li>
+                        <span class="'new-cricel">
+                            ✔
+                        </span>
+
+                        Bulk Orders Available
+                    </li>
+                    <li>
+                        <span class="'new-cricel">
+                            ✔
+                        </span>
+                        Reliable Local Delivery
+                    </li>
+                    <li>
+                        <span class="'new-cricel">
+                            ✔
+                        </span>
+                        Custom Bakery Solutions
+                    </li>
+                </ul>
+
+                <a href="#" class="wholesale-btn">
+                    <span class="wholesale-btn-fill" aria-hidden="true"></span>
+                    <span class="wholesale-btn-label">Become a Wholesale Partner</span>
+                    <span class="wholesale-btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                            <path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="wholesale-content">
-           
 
-            <h2 class="wholesale-heading" id="wholesaleHeading">
-                <span>Wholesale</span>
-                <span>Bakery Supply</span>
-                 <span class="wholesale-badge wholesale-badge--pink">
-                    <span class="dot-svg"></span>
-                    Cookie
-                </span>
-            <span class="wholesale-badge wholesale-badge--dark">
-                <span class="dot-svg"></span>
-                Cookie
-            </span>
+    <section class="wholesale new-2nd" aria-labelledby="wholesaleHeading">
+        <div class="wholesale-inner">
+            <div class="wholesale-media">
+                <!-- Swap src for your real photo (jpg/png). -->
+                <img src="assets/images/5680c3b6b2da1c5ce7d09b2aa7690ddf32c065ab.png"
+                    alt="A table spread of fresh cakes, pastries and baked goods" />
+            </div>
+
+            <div class="wholesale-content">
+
+
+                <h2 class="wholesale-heading" id="wholesaleHeading">
+                    <span>Made For Every </span>
+                    <span>Gathering</span>
+                    <span class="wholesale-badge wholesale-badge--pink">
+                        <span class="dot-svg"></span>
+                        Cookie
+                    </span>
+                </h2>
+
+                <p class="wholesale-text">
+                    From <strong>birthdays</strong> and <strong>office</strong> lunches to celebrations,
+                    <strong>school</strong> events, and <strong> gatherings</strong> our catering trays, desserts, and
+                    baked favorites are designed to bring people together.
+
+                </p>
+
+
+
+                <a href="#" class="wholesale-btn">
+                    <span class="wholesale-btn-fill" aria-hidden="true"></span>
+                    <span class="wholesale-btn-label">Plan Your Event</span>
+                    <span class="wholesale-btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
+                            <path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+     REVIEWS SECTION — bg image behind heading + auto-playing slider
+     ============================================================ -->
+    <style>
+        .rv-section {
+            position: relative;
+            /* bg image is positioned against this */
+            overflow: hidden;
+
+            isolation: isolate;
+        }
+
+        .rv-bg {
+            width: 100%;
+            max-height: 900px;
+            object-fit: cover;
+            border-radius: 20px;
+            background: #FFFEF2;
+
+        }
+
+
+
+        .rv-head {
+            position: absolute;
+            text-align: center;
+            padding: 0 24px;
+            margin-bottom: 64px;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 40px;
+        }
+
+        .rv-eyebrow {
+            font-family: Lato;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .rv-heading {
+            font-family: GT Walsheim Trial;
+            font-weight: 900;
+            font-style: U Bd;
+            font-size: 52px;
+            line-height: 62px;
+            letter-spacing: -1px;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+
+            color: #ffffff;
+            text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+        }
+
+        .rv-heading span {
+            display: block;
+        }
+
+        /* ---- slider ---- */
+        .rv-swiper {
+            overflow: visible;
+            /* let cards bleed past the screen edges */
+            padding: 0 24px;
+        }
+
+        .rv-swiper .swiper-slide {
+            width: 300px;
+            height: auto;
+            /* equal-height cards */
+        }
+
+        .rv-card {
+            border-radius: 16px;
+            padding: 32px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* slide colours — alternate these two on the cards */
+        .rv-card--blue {
+            background: #badaf3;
+        }
+
+        .rv-card--peach {
+            background: #FFFFFF66;
+            backdrop-filter: blur(25px)
+        }
+
+        .rv-stars {
+            color: #FFDA1F;
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: 3px;
+            margin-bottom: 32px;
+        }
+
+        .rv-title {
+            font-family: Lato;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 24.2px;
+            letter-spacing: -1%;
+            vertical-align: middle;
+
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .rv-text {
+            font-family: Lato;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 24.5px;
+            letter-spacing: -0.5%;
+            vertical-align: middle;
+
+            color: #000;
+            margin-bottom: 32px;
+            flex: 1;
+            /* pushes the footer row to the bottom */
+        }
+
+        .rv-foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding-top: 26px;
+        }
+
+        .rv-card--blue .rv-foot {
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .rv-card--peach .rv-foot {
+            border-top: 1px solid rgba(98, 144, 244, 0.15);
+        }
+
+        .rv-name {
+            font-family: Lato;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 18px;
+            leading-trim: NONE;
+            line-height: 24.5px;
+            letter-spacing: -0.5%;
+            vertical-align: middle;
+
+            color: #000;
+        }
+
+        .rv-verified {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-family: Lato;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 18px;
+            letter-spacing: -0.5%;
+            vertical-align: middle;
+
+            color: #000;
+        }
+
+        .rv-verified svg {
+            width: 14px;
+            height: 14px;
+            color: #1d9bf0;
+        }
+
+        .swiper-main {
+            position: absolute;
+            left: 0;
+            right: 0;
+            /* must have a real width, else Swiper measures the box as
+                        wide as all the cards, thinks nothing overflows and
+                        never slides */
+            bottom: 105px;
+        }
+        
+
+        @media (max-width: 1023px) {
+            .rv-section {}
+
+            .rv-heading {
+                font-size: 32px;
+            }
+
+            .rv-head {
+                margin-bottom: 44px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .rv-swiper {
+                padding: 0 16px;
+            }
+
+            .rv-swiper .swiper-slide {
+                width: 260px;
+            }
+
+            .rv-heading {
+                font-size: 26px;
+            }
+            .rv-bg {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+      }
+      .swiper-main {
+    bottom: 40px;
+}
+.rv-head {
+        margin-bottom: 20px;
+        top: 40px;
+        width: 100%;
+    }
+    .rv-heading {
+        font-size: 28px;
+        line-height: normal;
+    }
+    .rv-card {
+    border-radius: 10px;
+    padding: 20px 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rv-stars {
+    margin-bottom: 21px;
+}
+.rv-title {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.rv-text {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 21px;
+    flex: 1;
+    max-width: 200px;
+}
+.rv-foot {
+    padding-top: 16px;
+}
+.rv-name {
+    font-size: 12px;
+    line-height: normal;
+}
+.rv-verified {
+    font-size: 10px;
+    line-height: normal;
+}
+        }
+    </style>
+
+    <section class="rv-section" aria-labelledby="rvHeading">
+        <!-- background photo — swap src for your real bakery-case shot -->
+        <img class="rv-bg" src="assets/images/3c85d8fa674c77c84369e275d50f4ae7c4aee990.png" alt="" aria-hidden="true">
+        <div class="rv-bg-scrim" aria-hidden="true"></div>
+
+        <div class="rv-head">
+            <p class="rv-eyebrow">Real People, Real Results</p>
+            <h2 class="rv-heading" id="rvHeading">
+                <span>Amazing Reviews For</span>
+                <span>HillcrestBakery</span>
             </h2>
-
-            <p class="wholesale-text">Fresh breads, pastries, desserts, and baked goods supplied daily to
-                cafés, restaurants, grocery stores, schools, and local businesses. Reliable production,
-                consistent quality, and bakery products made fresh every day.</p>
-
-            <ul class="wholesale-features">
-                <li>
-                    <span class="'new-cricel">
-                        ✔
-                    </span>
-                    Fresh Daily Production
-                </li>
-                <li>
-                    <span class="'new-cricel">
-                        ✔
-                    </span>
-                    
-                    Bulk Orders Available
-                </li>
-                <li>
-                   <span class="'new-cricel">
-                        ✔
-                    </span>
-                    Reliable Local Delivery
-                </li>
-                <li>
-                    <span class="'new-cricel">
-                        ✔
-                    </span>
-                    Custom Bakery Solutions
-                </li>
-            </ul>
-
-            <a href="#" class="wholesale-btn">
-                <span class="wholesale-btn-fill" aria-hidden="true"></span>
-                <span class="wholesale-btn-label">Become a Wholesale Partner</span>
-                <span class="wholesale-btn-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-<path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </span>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-<section class="wholesale new-2nd" aria-labelledby="wholesaleHeading">
-    <div class="wholesale-inner">
-        <div class="wholesale-media">
-            <!-- Swap src for your real photo (jpg/png). -->
-            <img src="assets/images/5680c3b6b2da1c5ce7d09b2aa7690ddf32c065ab.png"
-                alt="A table spread of fresh cakes, pastries and baked goods" />
         </div>
 
-        <div class="wholesale-content">
-           
+        <div class="swiper-main">
 
-            <h2 class="wholesale-heading" id="wholesaleHeading">
-                <span>Made For Every </span>
-                <span>Gathering</span>
-                 <span class="wholesale-badge wholesale-badge--pink">
-                    <span class="dot-svg"></span>
-                    Cookie
-                </span>
-            </h2>
+            <div class="swiper rv-swiper">
+                <div class="swiper-wrapper">
 
-            <p class="wholesale-text">
-                           From <strong>birthdays</strong> and <strong>office</strong> lunches to celebrations, <strong>school</strong> events, and <strong> gatherings</strong> our catering trays, desserts, and baked favorites are designed to bring people together.
+                    <div class="swiper-slide">
+                        <article class="rv-card rv-card--blue">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2334)">
+                                            <g clip-path="url(#clip1_219_2334)">
+                                                <g clip-path="url(#clip2_219_2334)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>Verified</span>
+                            </div>
+                        </article>
+                    </div>
 
-            </p>
+                    <div class="swiper-slide">
+                        <article class="rv-card rv-card--peach">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2313)">
+                                            <g clip-path="url(#clip1_219_2313)">
+                                                <g clip-path="url(#clip2_219_2313)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Verified</span>
+                            </div>
+                        </article>
+                    </div>
 
-            
+                    <div class="swiper-slide">
+                        <article class="rv-card rv-card--blue">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2334)">
+                                            <g clip-path="url(#clip1_219_2334)">
+                                                <g clip-path="url(#clip2_219_2334)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>Verified</span>
+                            </div>
+                        </article>
+                    </div>
 
-            <a href="#" class="wholesale-btn">
-                <span class="wholesale-btn-fill" aria-hidden="true"></span>
-                <span class="wholesale-btn-label">Plan Your Event</span>
-                <span class="wholesale-btn-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none">
-<path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                </span>
-            </a>
+                    <div class="swiper-slide">
+                        <article class="rv-card rv-card--peach">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2313)">
+                                            <g clip-path="url(#clip1_219_2313)">
+                                                <g clip-path="url(#clip2_219_2313)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>Verified</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="rv-card rv-card--blue">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2334)">
+                                            <g clip-path="url(#clip1_219_2334)">
+                                                <g clip-path="url(#clip2_219_2334)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>Verified</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="rv-card rv-card--peach">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2313)">
+                                            <g clip-path="url(#clip1_219_2313)">
+                                                <g clip-path="url(#clip2_219_2313)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>Verified</span>
+                            </div>
+                        </article>
+                    </div>
+                     <div class="swiper-slide">
+                        <article class="rv-card rv-card--blue">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2334)">
+                                            <g clip-path="url(#clip1_219_2334)">
+                                                <g clip-path="url(#clip2_219_2334)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2334">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>Verified</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="rv-card rv-card--peach">
+                            <div class="rv-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                            <h3 class="rv-title">Best matcha ever!</h3>
+                            <p class="rv-text">I already have it and they bought it straight away too.</p>
+                            <div class="rv-foot">
+                                <span class="rv-name">Daniela A.</span>
+                                <span class="rv-verified">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_219_2313)">
+                                            <g clip-path="url(#clip1_219_2313)">
+                                                <g clip-path="url(#clip2_219_2313)">
+                                                    <path
+                                                        d="M16.8139 8.40695C16.7979 7.82861 16.6214 7.26611 16.3041 6.7823C15.9869 6.29849 15.5413 5.91244 15.0173 5.66726C15.216 5.12392 15.2591 4.5359 15.1419 3.96938C15.0246 3.40285 14.7515 2.8803 14.3534 2.46053C13.9336 2.0624 13.411 1.78933 12.8445 1.67204C12.278 1.55475 11.69 1.5979 11.1466 1.79663C10.9031 1.27138 10.5174 0.824761 10.0332 0.507262C9.54908 0.189763 8.98575 0.0140525 8.40695 0C7.8294 0.0150229 7.26756 0.191219 6.78487 0.508693C6.30218 0.826167 5.91786 1.27227 5.67532 1.79663C5.13087 1.59684 4.54136 1.55345 3.97353 1.67137C3.40537 1.78768 2.88195 2.06147 2.46142 2.46053C2.06333 2.88033 1.7908 3.40325 1.67473 3.97003C1.55865 4.53681 1.60367 5.12477 1.80468 5.66726C1.27932 5.91155 0.832284 6.29717 0.51357 6.78101C0.194856 7.26485 0.0170359 7.82782 0 8.40695C0.0176453 8.98593 0.195711 9.54863 0.514354 10.0324C0.832996 10.5161 1.2797 10.9018 1.80468 11.1466C1.60461 11.6892 1.55999 12.2769 1.67586 12.8434C1.79174 13.41 2.06349 13.9329 2.46053 14.3534C2.88117 14.7501 3.4037 15.0222 3.96989 15.1394C4.53607 15.2566 5.12369 15.2143 5.66726 15.0173C5.91244 15.5413 6.29849 15.9869 6.7823 16.3041C7.26611 16.6214 7.82861 16.7979 8.40695 16.8139C8.98546 16.7991 9.54837 16.6232 10.0324 16.306C10.5164 15.9887 10.9023 15.5427 11.1466 15.0182C11.6877 15.2316 12.2793 15.2823 12.8488 15.164C13.4183 15.0457 13.9408 14.7635 14.352 14.3522C14.7633 13.9408 15.0453 13.4183 15.1635 12.8488C15.2817 12.2793 15.2309 11.6876 15.0173 11.1466C15.5413 10.9015 15.9869 10.5154 16.3041 10.0316C16.6214 9.54778 16.7979 8.98529 16.8139 8.40695ZM7.20979 11.8517L4.14174 8.78453L5.29863 7.61958L7.15253 9.47347L11.0894 5.18411L12.2946 6.29895L7.20979 11.8517Z"
+                                                        fill="#0083F9" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip1_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                            <clipPath id="clip2_219_2313">
+                                                <rect width="17" height="17" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>Verified</span>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
- <footer class="site-footer">
+<section class="event-section">
+        <div class="event-container">
+            <div class="event-swiper swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide event-slide">
+                        <div class="event-content">
+                            <span class="event-badge">Most Popular</span>
+                            <h2 class="event-title">Cheesecake</h2>
+                            <p class="event-desc">
+                                Made with a velvety cream cheese filling on a buttery biscuit base, delivering the
+                                perfect balance of richness and texture.<br>
+                                Finished with premium ingredients and baked to perfection for an indulgent dessert
+                                experience in every slice.
+                            </p>
+                            <a href="#" class="event-cta">
+                                <span class="event-cta-label">Become a Wholesale Partner</span>
+                                <span class="event-cta-icon">
+                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="event-nav">
+                                <button type="button" class="event-nav-btn event-prev" aria-label="Previous flavor">
+                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 7H1M7.15385 13L1 7L7.15385 1" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="event-nav-btn event-next" aria-label="Next flavor">
+                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="event-bg-img event-bg-img--desktop" src="assets/images/Frame 2147243677.png"
+                            alt="Cheesecake on a cake stand">
+                        <img class="event-bg-img event-bg-img--mobile" src="assets/images/Frame 2147243677.png"
+                            alt="Cheesecake on a cake stand">
+                    </div>
+                    <div class="swiper-slide event-slide">
+                        <div class="event-content">
+                            <span class="event-badge">Most Popular</span>
+                            <h2 class="event-title">Cheesecake</h2>
+                            <p class="event-desc">
+                                Made with a velvety cream cheese filling on a buttery biscuit base, delivering the
+                                perfect balance of richness and texture.<br>
+                                Finished with premium ingredients and baked to perfection for an indulgent dessert
+                                experience in every slice.
+                            </p>
+                            <a href="#" class="event-cta">
+                                <span class="event-cta-label">Become a Wholesale Partner</span>
+                                <span class="event-cta-icon">
+                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <div class="event-nav">
+                                <button type="button" class="event-nav-btn event-prev" aria-label="Previous flavor">
+                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 7H1M7.15385 13L1 7L7.15385 1" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="event-nav-btn event-next" aria-label="Next flavor">
+                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 7H21M14.8462 13L21 7L14.8462 1" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="event-bg-img event-bg-img--desktop" src="assets/images/Component 298 (1).png"
+                            alt="Cheesecake on a cake stand">
+                        <img class="event-bg-img event-bg-img--mobile" src="assets/images/Component 298 (1).png"
+                            alt="Cheesecake on a cake stand">
+                    </div>
+                    <!-- Next flavor slides go here — copy the block above
+                         (each slide carries its own nav buttons; they all
+                         control the same swiper instance) -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // ============================================================
+        // FLAVOR SPOTLIGHT (e.g. "Cheesecake")
+        // Paste this block into your main <script> (it reuses the same
+        // Swiper library already loaded on the page).
+        //
+        // Prev/Next are real <button> elements duplicated inside every
+        // slide (so they always sit right under that slide's CTA). They
+        // all drive the SAME swiper instance, and get a native `disabled`
+        // attribute + `.is-disabled` class at the first/last slide — on
+        // both desktop and mobile, since it's the same JS either way.
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', function () {
+            var sectionEl = document.querySelector('.event-section');
+            if (!sectionEl) return;
+
+            var swiperEl = sectionEl.querySelector('.event-swiper');
+
+            var eventSwiper = new Swiper(swiperEl, {
+                slidesPerView: 1,
+                watchOverflow: true,
+                allowTouchMove: false,
+                observer: true,
+                observeParents: true,
+                observeSlideChildren: true
+            });
+
+            eventSwiper.on('slideChange', updateNavState);
+            eventSwiper.on('imagesReady', function () {
+                eventSwiper.update();
+                updateNavState();
+            });
+
+            // 'init' constructor ke andar hi fire ho chuka hai isliye
+            // yaha manually ek baar call kar rahe hain
+            updateNavState();
+
+            // Images loading after Swiper's own init can leave it thinking
+            // there's only one slide's worth of width (isEnd stuck true,
+            // which disables the Next button). Force a recalculation once
+            // everything has actually finished loading, just to be safe.
+            window.addEventListener('load', function () {
+                eventSwiper.update();
+                updateNavState();
+            });
+
+            function updateNavState() {
+                var atStart = eventSwiper.isBeginning;
+                var atEnd = eventSwiper.isEnd;
+
+                sectionEl.querySelectorAll('.event-prev').forEach(function (btn) {
+                    btn.disabled = atStart;
+                    btn.classList.toggle('is-disabled', atStart);
+                });
+                sectionEl.querySelectorAll('.event-next').forEach(function (btn) {
+                    btn.disabled = atEnd;
+                    btn.classList.toggle('is-disabled', atEnd);
+                });
+            }
+
+            sectionEl.querySelectorAll('.event-prev').forEach(function (btn) {
+                btn.addEventListener('click', function () { eventSwiper.slidePrev(); });
+            });
+            sectionEl.querySelectorAll('.event-next').forEach(function (btn) {
+                btn.addEventListener('click', function () { eventSwiper.slideNext(); });
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="site-footer">
         <div class="footer-top">
             <div class="footer-brand">
                 <img class="footer-logo" src="assets/images/Container (15).png" alt="Hillcrest Bakery &amp; Deli">
@@ -1274,8 +2353,8 @@ span.dot-svg {
     </footer>
 
 
-    
-    
+
+
 
 
 
@@ -1305,205 +2384,232 @@ span.dot-svg {
     <script src="js/include.js" defer></script>
     <script src="js/main.js" defer></script>
     <script>
-(function () {
+        (function () {
 
-    function whenElementsExist(ids, callback) {
-        var allFound = ids.every(function (id) { return document.getElementById(id); });
-        if (allFound) return callback();
-        requestAnimationFrame(function () { whenElementsExist(ids, callback); });
-    }
-
-    whenElementsExist(['siteHeader', 'shopDropdown', 'shopTrigger', 'heroBgImgA', 'heroBgImgB', 'mobileBottomNav'], function () {
-
-        // ============================================================
-        // HEADER — sticky pill on scroll, Shop dropdown
-        // ============================================================
-        var header = document.getElementById('siteHeader');
-        var threshold = 40;
-        var MOBILE_BREAKPOINT = 1023;
-
-        function isMobile() { return window.innerWidth <= MOBILE_BREAKPOINT; }
-
-        function onHeaderScroll() {
-            if (!isMobile()) {
-                if (window.scrollY > threshold) { header.classList.add('is-fixed'); }
-                else { header.classList.remove('is-fixed'); }
-            } else {
-                header.classList.remove('is-fixed');
-            }
-        }
-        onHeaderScroll();
-        window.addEventListener('scroll', onHeaderScroll, { passive: true });
-        window.addEventListener('resize', onHeaderScroll);
-
-        var dropdown = document.getElementById('shopDropdown');
-        var trigger = document.getElementById('shopTrigger');
-        function closeDropdown() {
-            dropdown.removeAttribute('data-open');
-            trigger.setAttribute('aria-expanded', 'false');
-        }
-        function openDropdown() {
-            dropdown.setAttribute('data-open', 'true');
-            trigger.setAttribute('aria-expanded', 'true');
-        }
-        trigger.addEventListener('click', function (e) {
-            e.stopPropagation();
-            var open = dropdown.getAttribute('data-open') === 'true';
-            if (open) { closeDropdown(); } else { openDropdown(); }
-        });
-        dropdown.addEventListener('click', function (e) { e.stopPropagation(); });
-        document.addEventListener('click', function () { closeDropdown(); });
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') closeDropdown();
-        });
-
-        // ============================================================
-        // HERO — thumbnail crossfade
-        // ============================================================
-        var bgLayers = [document.getElementById('heroBgImgA'), document.getElementById('heroBgImgB')];
-        var activeLayer = 0;
-        var thumbs = document.querySelectorAll('.hero-thumbs .hero-thumb');
-
-        var initialActive = document.querySelector('.hero-thumbs .hero-thumb.is-active');
-        if (initialActive) {
-            var initialImg = initialActive.querySelector('img');
-            if (initialImg) { bgLayers[activeLayer].src = initialImg.getAttribute('src'); }
-        }
-
-        var latestSrc = null;
-
-        function setHeroBg(thumbImg) {
-            var src = thumbImg.getAttribute('src');
-            var current = bgLayers[activeLayer];
-            var next = bgLayers[1 - activeLayer];
-            if (current.getAttribute('src') === src) return;
-            latestSrc = src;
-
-            function paint() {
-                if (latestSrc !== src) return;
-                next.classList.add('is-visible');
-                current.classList.remove('is-visible');
-                activeLayer = 1 - activeLayer;
+            function whenElementsExist(ids, callback) {
+                var allFound = ids.every(function (id) { return document.getElementById(id); });
+                if (allFound) return callback();
+                requestAnimationFrame(function () { whenElementsExist(ids, callback); });
             }
 
-            function loadNext() {
-                next.src = src;
-                if (next.decode) {
-                    next.decode().then(paint).catch(paint);
-                } else if (next.complete) {
-                    paint();
-                } else {
-                    next.addEventListener('load', paint, { once: true });
+            whenElementsExist(['siteHeader', 'shopDropdown', 'shopTrigger', 'heroBgImgA', 'heroBgImgB', 'mobileBottomNav'], function () {
+
+                // ============================================================
+                // HEADER — sticky pill on scroll, Shop dropdown
+                // ============================================================
+                var header = document.getElementById('siteHeader');
+                var threshold = 40;
+                var MOBILE_BREAKPOINT = 1023;
+
+                function isMobile() { return window.innerWidth <= MOBILE_BREAKPOINT; }
+
+                function onHeaderScroll() {
+                    if (!isMobile()) {
+                        if (window.scrollY > threshold) { header.classList.add('is-fixed'); }
+                        else { header.classList.remove('is-fixed'); }
+                    } else {
+                        header.classList.remove('is-fixed');
+                    }
                 }
-            }
+                onHeaderScroll();
+                window.addEventListener('scroll', onHeaderScroll, { passive: true });
+                window.addEventListener('resize', onHeaderScroll);
 
-            if (thumbImg.decode) {
-                thumbImg.decode().then(loadNext).catch(loadNext);
-            } else if (thumbImg.complete) {
-                loadNext();
-            } else {
-                thumbImg.addEventListener('load', loadNext, { once: true });
-            }
-        }
-
-        function activateThumb(el) {
-            thumbs.forEach(function (t) {
-                t.classList.remove('is-active');
-                t.setAttribute('aria-pressed', 'false');
-            });
-            el.classList.add('is-active');
-            el.setAttribute('aria-pressed', 'true');
-
-            var thumbImg = el.querySelector('img');
-            if (thumbImg) { setHeroBg(thumbImg); }
-        }
-
-        thumbs.forEach(function (el) {
-            el.addEventListener('click', function () { activateThumb(el); });
-            el.addEventListener('keydown', function (e) {
-                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateThumb(el); }
-            });
-        });
-
-        // ============================================================
-        // MOBILE BOTTOM NAV
-        // ============================================================
-        var mobileBottomNav = document.getElementById('mobileBottomNav');
-        var mobileNavThreshold = 20;
-
-        function onMobileNavScroll() {
-            if (isMobile() && window.scrollY > mobileNavThreshold) {
-                mobileBottomNav.classList.add('is-visible');
-            } else {
-                mobileBottomNav.classList.remove('is-visible');
-            }
-        }
-        onMobileNavScroll();
-        window.addEventListener('scroll', onMobileNavScroll, { passive: true });
-        window.addEventListener('resize', onMobileNavScroll);
-
-        document.querySelectorAll('.mobile-nav-item').forEach(function (item) {
-            item.addEventListener('click', function () {
-                document.querySelectorAll('.mobile-nav-item').forEach(function (i) { i.classList.remove('is-active'); });
-                item.classList.add('is-active');
-            });
-        });
-
-        // ============================================================
-        // FOOTER — mobile accordion
-        // ============================================================
-        var footerCols = document.querySelectorAll('.footer-col');
-        footerCols.forEach(function (col) {
-            var toggle = col.querySelector('.footer-col-toggle');
-            toggle.addEventListener('click', function () {
-                if (!isMobile()) return;
-                var wasOpen = col.classList.contains('is-open');
-                footerCols.forEach(function (c) {
-                    c.classList.remove('is-open');
-                    c.querySelector('.footer-col-toggle').setAttribute('aria-expanded', 'false');
+                var dropdown = document.getElementById('shopDropdown');
+                var trigger = document.getElementById('shopTrigger');
+                function closeDropdown() {
+                    dropdown.removeAttribute('data-open');
+                    trigger.setAttribute('aria-expanded', 'false');
+                }
+                function openDropdown() {
+                    dropdown.setAttribute('data-open', 'true');
+                    trigger.setAttribute('aria-expanded', 'true');
+                }
+                trigger.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    var open = dropdown.getAttribute('data-open') === 'true';
+                    if (open) { closeDropdown(); } else { openDropdown(); }
                 });
-                if (!wasOpen) {
-                    col.classList.add('is-open');
-                    toggle.setAttribute('aria-expanded', 'true');
+                dropdown.addEventListener('click', function (e) { e.stopPropagation(); });
+                document.addEventListener('click', function () { closeDropdown(); });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') closeDropdown();
+                });
+
+                // ============================================================
+                // HERO — thumbnail crossfade
+                // ============================================================
+                var bgLayers = [document.getElementById('heroBgImgA'), document.getElementById('heroBgImgB')];
+                var activeLayer = 0;
+                var thumbs = document.querySelectorAll('.hero-thumbs .hero-thumb');
+
+                var initialActive = document.querySelector('.hero-thumbs .hero-thumb.is-active');
+                if (initialActive) {
+                    var initialImg = initialActive.querySelector('img');
+                    if (initialImg) { bgLayers[activeLayer].src = initialImg.getAttribute('src'); }
                 }
+
+                var latestSrc = null;
+
+                function setHeroBg(thumbImg) {
+                    var src = thumbImg.getAttribute('src');
+                    var current = bgLayers[activeLayer];
+                    var next = bgLayers[1 - activeLayer];
+                    if (current.getAttribute('src') === src) return;
+                    latestSrc = src;
+
+                    function paint() {
+                        if (latestSrc !== src) return;
+                        next.classList.add('is-visible');
+                        current.classList.remove('is-visible');
+                        activeLayer = 1 - activeLayer;
+                    }
+
+                    function loadNext() {
+                        next.src = src;
+                        if (next.decode) {
+                            next.decode().then(paint).catch(paint);
+                        } else if (next.complete) {
+                            paint();
+                        } else {
+                            next.addEventListener('load', paint, { once: true });
+                        }
+                    }
+
+                    if (thumbImg.decode) {
+                        thumbImg.decode().then(loadNext).catch(loadNext);
+                    } else if (thumbImg.complete) {
+                        loadNext();
+                    } else {
+                        thumbImg.addEventListener('load', loadNext, { once: true });
+                    }
+                }
+
+                function activateThumb(el) {
+                    thumbs.forEach(function (t) {
+                        t.classList.remove('is-active');
+                        t.setAttribute('aria-pressed', 'false');
+                    });
+                    el.classList.add('is-active');
+                    el.setAttribute('aria-pressed', 'true');
+
+                    var thumbImg = el.querySelector('img');
+                    if (thumbImg) { setHeroBg(thumbImg); }
+                }
+
+                thumbs.forEach(function (el) {
+                    el.addEventListener('click', function () { activateThumb(el); });
+                    el.addEventListener('keydown', function (e) {
+                        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateThumb(el); }
+                    });
+                });
+
+                // ============================================================
+                // MOBILE BOTTOM NAV
+                // ============================================================
+                var mobileBottomNav = document.getElementById('mobileBottomNav');
+                var mobileNavThreshold = 20;
+
+                function onMobileNavScroll() {
+                    if (isMobile() && window.scrollY > mobileNavThreshold) {
+                        mobileBottomNav.classList.add('is-visible');
+                    } else {
+                        mobileBottomNav.classList.remove('is-visible');
+                    }
+                }
+                onMobileNavScroll();
+                window.addEventListener('scroll', onMobileNavScroll, { passive: true });
+                window.addEventListener('resize', onMobileNavScroll);
+
+                document.querySelectorAll('.mobile-nav-item').forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        document.querySelectorAll('.mobile-nav-item').forEach(function (i) { i.classList.remove('is-active'); });
+                        item.classList.add('is-active');
+                    });
+                });
+
+                // ============================================================
+                // FOOTER — mobile accordion
+                // ============================================================
+                var footerCols = document.querySelectorAll('.footer-col');
+                footerCols.forEach(function (col) {
+                    var toggle = col.querySelector('.footer-col-toggle');
+                    toggle.addEventListener('click', function () {
+                        if (!isMobile()) return;
+                        var wasOpen = col.classList.contains('is-open');
+                        footerCols.forEach(function (c) {
+                            c.classList.remove('is-open');
+                            c.querySelector('.footer-col-toggle').setAttribute('aria-expanded', 'false');
+                        });
+                        if (!wasOpen) {
+                            col.classList.add('is-open');
+                            toggle.setAttribute('aria-expanded', 'true');
+                        }
+                    });
+                });
+
             });
-        });
 
-    });
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-})();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-(function () {
-    function whenElementExists(selector, callback) {
-        var el = document.querySelector(selector);
-        if (el) return callback(el);
-        requestAnimationFrame(function () { whenElementExists(selector, callback); });
-    }
-    whenElementExists('.fp-swiper', function (fpSwiperEl) {
-        new Swiper(fpSwiperEl, {
-            slidesPerView: 1.1,
-            spaceBetween: 12,
-            // loop: true,
-            // centeredSlides: true,
-            watchOverflow: true,
-            pagination: {
-                el: '.fp-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 3,
+    <script>
+        (function () {
+            function whenElementExists(selector, callback) {
+                var el = document.querySelector(selector);
+                if (el) return callback(el);
+                requestAnimationFrame(function () { whenElementExists(selector, callback); });
+            }
+            whenElementExists('.fp-swiper', function (fpSwiperEl) {
+                new Swiper(fpSwiperEl, {
+                    slidesPerView: 1.1,
                     spaceBetween: 12,
-                    centeredSlides: false,
-                },
+                    // loop: true,
+                    // centeredSlides: true,
+                    watchOverflow: true,
+                    pagination: {
+                        el: '.fp-pagination',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 12,
+                            centeredSlides: false,
+                        },
+                    },
+                });
+            });
+
+            /* Reviews: auto-playing marquee of cards, pauses on hover */
+            document.addEventListener('DOMContentLoaded', function () {
+    var rvSwiperEl = document.querySelector('.rv-swiper');
+    if (!rvSwiperEl) return;
+
+    new Swiper(rvSwiperEl, {
+        centeredSlides: true,
+        spaceBetween: 16,
+        loop: true,
+        speed: 700,
+        grabCursor: true,
+        autoplay: {
+            delay: 2200,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        breakpoints: {
+            0: { slidesPerView: 1.4 ,
+                spaceBetween: 8
             },
-        });
+            1024: {
+        slidesPerView: 3.5,     // desktop: center + exact half on each side
+    },
+        },
     });
-})();
-</script>
+});
+        })();
+    </script>
 </body>
 
 
